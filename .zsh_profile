@@ -1,0 +1,12 @@
+export 
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home
+export ANDROID_HOME=/Users/courtneylouisecox/Library/Android/sdk
+export ANDROID_SDK=/Users/courtneylouisecox/Library/Android/sdk
+export ANDROID_AVD_HOME=/Users/courtneylouisecox/.android/avd
+export PATH=$ANROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platforms-tools
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/courtneylouisecox/.sdkman[["
+[[ -s "/Users/courtneylouisecox/.sdkman[[/bin/sdkman-init.sh" ]] && source "/Users/courtneylouisecox/.sdkman[[/bin/sdkman-init.sh"
+

@@ -1,0 +1,35 @@
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #3F0068;
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #FFFFFF;
+  color: #E26CBA;
+}
+
+.sidenav {
+    background-color: #3F0068;
+    color: #FFFFFF;
+}
+
+/* Main content */
+.body {
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+}

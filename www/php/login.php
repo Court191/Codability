@@ -20,7 +20,8 @@ $message = "dunno what happened";
                         $_SESSION['username']=$username;
                         $_SESSION['userID']=$db_id;
                         $_SESSION['logged']="logged";
-                        header('Location: home.php');
+                        //header('Location: home.php');
+                        $message = "Success";
                     }else{
                         $message = "<h2>Incorrect password!</h2>";
                     }
@@ -35,7 +36,9 @@ $message = "dunno what happened";
             }
     }
         //header/footer only required if submitting to a separate page
+        include_once("header.php");
         //echo $message; //Place within HTML body
         //include_once("footer.php");
-echo json_encode($message);
+
+echo json_encode("hello");
 ?>

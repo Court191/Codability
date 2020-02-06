@@ -8,7 +8,7 @@ h1 {
     font-size: 40px;
     letter-spacing: 3px; 
 }
-.vertical {
+.wrapper {
     height: 100vh;
     display: flex;
     flex-direction: column;

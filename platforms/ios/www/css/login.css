@@ -25,35 +25,38 @@ h1 {
     font-size: 20px;
     text-align: center;
 }
-.user {
+.button1 {
     margin-bottom: 0.8em;
 }
-.pass {
-    margin-bottom: 0.8em;
-}
-.repeatpass {
+.button2 { 
     margin-bottom: 0.8em;
 }
 .formbuttons {
     display: flex;
     align-items: center;
     justify-content: center; 
-    margin: 1em;
+    margin: 1em; 
 }
 .submit {
-    background: #9E4287; 
+    background: #E26CBA; 
     color: #FFFFFF; 
     border: none;
-    margin: auto; 
+    margin:auto; 
 }
 .reset {
     background: #FFFFFF; 
     color: #E26CBA;
-    margin: auto;
+    margin:auto;
 }
 input {  
     border-radius: 30px; 
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     text-align: center; 
+}
+a {
+    text-align: center; 
+    color: #9E4287;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
 }

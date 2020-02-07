@@ -54,9 +54,23 @@ input {
     font-size: 20px;
     text-align: center; 
 }
-a {
-    text-align: center; 
+.bottom {
+    text-align: center;
+}
+.signup {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+a { 
     color: #9E4287;
     text-decoration: none;
     font-family: 'Poppins', sans-serif; 
+}
+a:hover {
+    color: #E26CBA;
+}
+.errormessage {
+    font-family: 'Poppins', sans-serif;
+    color: #82C5F4;
+    font-weight: 800; 
 }

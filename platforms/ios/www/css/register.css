@@ -57,3 +57,20 @@ input {
     font-size: 20px;
     text-align: center; 
 }
+.login {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+a { 
+    color: #E26CBA;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+}
+a:hover {
+    color: #9E4287;
+}
+.errormessage {
+    font-family: 'Poppins', sans-serif;
+    color: #82C5F4;
+    font-weight: 800; 
+}

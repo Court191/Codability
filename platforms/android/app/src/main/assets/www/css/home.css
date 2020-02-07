@@ -7,15 +7,14 @@
   background-color: #3F0068;
   position: fixed; 
   bottom: 0; 
-  width: 100vh; 
+  left: 0; 
+  width: 100vw; 
 }
 .navbar__links {
-    display:flex;
     align-items: center;
-    flex-direction: row; 
+    padding: auto; 
 }
 .navbar a {
-  display:flex;
   align-items: center;
   color: #FFFFFF;
   text-align: center;
@@ -25,6 +24,12 @@
 }
 .navbar a:hover {
   color: #E26CBA;
+}
+span { 
+    margin: 0.5em; 
+}
+a { 
+    align-items: center;
 }
 /* Side Navigation Bar */
 .sidenav {
@@ -36,4 +41,23 @@
     height 100vh; 
     width: 200px; 
 }
-
+.sidenav__links {
+    display:flex;
+    align-items: center;
+    flex-direction: row; 
+}
+.sidenav a {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.sidenav a:hover {
+  color: #3F0068;
+}
+.sidenav--open {
+    left: 0;
+}

@@ -1,3 +1,3 @@
 function toggleNav() {
-    document.querySelector(".sidenav").classList.toggle("sidenav--open"; 
+    document.querySelector(".sidenav").classList.toggle("sidenav--open"); 
 }

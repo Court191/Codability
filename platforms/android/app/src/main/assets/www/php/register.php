@@ -1,20 +1,18 @@
 <?php
-
-require_once("functions.php");
-// Grab the form data
-$submit = trim($_POST['submit']);
-$username = trim($_POST['username']);
-$password = trim($_POST['password']); $repeatpassword = trim($_POST['repeatpassword']); // Create some variables to hold output data $message = '';
-$s_username = '';
-
-// Start to use PHP session
-session_start();
-// Determine whether user is logged in - test for value in $_SESSION
-if (isset($_SESSION['logged'])){
+    require_once("functions.php");
+    $submit = trim($_POST['submit']);
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']); $repeatpassword = trim($_POST['repeatpassword']); 
+    // Create some variables to hold output data $message = '';
+    $s_username = '';
+    // Start to use PHP session
+    session_start();
+    // Determine whether user is logged in - test for value in $_SESSION
+    if (isset($_SESSION['logged'])){
     $s_username = $_SESSION['username'];
     $message = "You are already logged in as $s_username.
                 Please <a href='logout.php'>logout</a> before trying to register.";
-}else{
+    }else{
       // Next block of code will go here
     if ($submit=='Register'){
         // Process submission here
@@ -62,9 +60,9 @@ if (isset($_SESSION['logged'])){
                  $message = "Both password fields must match"; 
                 }
             }else{
-                    $message = "Please fill in all fields";
+                $message = "Please fill in all fields";
             }
+        }
     }
-}
-echo json_encode("hello");
+    echo json_encode($message);
 ?>

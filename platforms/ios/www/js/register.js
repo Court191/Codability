@@ -7,27 +7,27 @@ $(document).ready(function() {
         var passwordValue = document.getElementById("password").value; 
         var repeatpasswordValue = document.getElementById("repeatpassword").value;
         
-        var regform = new FormData(); 
+        var regform = new FormData(this); 
         if(usernameValue && passwordValue && repeatpasswordValue)
         {
             // Call Ajax 
             $.ajax ({
                 type: 'POST',
-                url: 'http://ll16clc.leedsnewmedia.net/Codability/www/register.php',
+                url: 'http://ll16clc.leedsnewmedia.net/Codability/www/php/register.php',
                     data: regform,
                     processData: false, 
                     contentType: false,
                     success: function(response) {
-                    if(response == "success")
+                   /* if(response == true)
                             {
                                 window.location.href="home.html"; 
                             } else {
-                            alert("Wrong Details");
-                        }
+                                document.getElementById("error").innerHTML = "Wrong Details";
+                        } */ console.log(response)
                     }
                 });
             } else {
-            alert("Please Fill All The Fields");
+                document.getElementById("error").innerHTML = "Please Fill All The Fields";
         }
         return false;
     });

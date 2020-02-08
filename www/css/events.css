@@ -9,6 +9,7 @@
   bottom: 0; 
   left: 0; 
   width: 100vw; 
+  text-align: center; 
 }
 .navbar__links {
     align-items: center;
@@ -24,46 +25,23 @@
   align-items: center;
   color: #FFFFFF;
   text-align: center;
-  padding: 2px 10px;
+  padding: 2px 8px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
 .navbar a:hover {
   color: #E26CBA;
 }
-/* Side Navigation Bar */
-.sidenav {
+.top {
+    overflow: hidden;
     background-color: #E26CBA;
-    color: #FFFFFF;
-    position: fixed;
+    position: fixed; 
     top: 0; 
     left: 0; 
-    height 100vh; 
-    width: 200px; 
+    width: 100vw;
 }
-.sidenav__links {
-    display:flex;
-    align-items: center;
-    flex-direction: row; 
-}
-.material-icons {
-    margin: 0.4em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.sidenav a {
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-}
-.sidenav a:hover {
-  color: #3F0068;
-}
-.sidenav--open {
-    left: 0;
+h1 {
+    text-align: center; 
+    color: #3F0068;
+    font-family: 'Poppins', sans-serif;
 }

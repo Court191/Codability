@@ -18,9 +18,9 @@ $(document).ready(function() {
                     processData: false, 
                     contentType: false,
                     success: function(response) {
-                   /* if(response == true)
+                    /* if(response == true)
                             {
-                                window.location.href="home.html"; 
+                                document.getElementById("success").innerHTML = "Registration Successful!"; 
                             } else {
                                 document.getElementById("error").innerHTML = "Wrong Details";
                         } */ console.log(response)

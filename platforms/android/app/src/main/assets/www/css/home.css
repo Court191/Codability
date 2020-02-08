@@ -12,24 +12,24 @@
 }
 .navbar__links {
     align-items: center;
-    padding: auto; 
+}
+.material-icons {
+    margin: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .navbar a {
+  display: inline-grid; 
   align-items: center;
   color: #FFFFFF;
   text-align: center;
-  padding: 14px 16px;
+  padding: 2px 10px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
 .navbar a:hover {
   color: #E26CBA;
-}
-span { 
-    margin: 0.5em; 
-}
-a { 
-    align-items: center;
 }
 /* Side Navigation Bar */
 .sidenav {
@@ -45,6 +45,12 @@ a {
     display:flex;
     align-items: center;
     flex-direction: row; 
+}
+.material-icons {
+    margin: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sidenav a {
   display: flex;

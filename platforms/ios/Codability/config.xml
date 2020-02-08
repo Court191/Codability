@@ -21,10 +21,10 @@
     </feature>
     <name>Codability</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        An E-leanring app to help encourage women to learn code in an interactive and personalised way.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="ll16clc@leeds.ac.uk" href="http://cordova.io">
+        Codability
     </author>
     <content src="index.html" />
     <access origin="*" />

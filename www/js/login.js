@@ -21,7 +21,7 @@ $(document).ready(function() {
                             {
                                 window.location.href="home.html"; 
                             } else {
-                                document.getElementById("error").innerHTML = "Wrong Details";
+                                document.getElementById("error").innerHTML = response;
                             } 
                         } 
                     });
@@ -33,6 +33,6 @@ $(document).ready(function() {
 });
 
 // When reset button is clicked
-function reset() {
+function clear() {
   document.getElementById("loginForm").reset();
 } 

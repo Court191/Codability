@@ -74,3 +74,8 @@ a:hover {
     color: #82C5F4;
     font-weight: 800; 
 }
+.logoutmessage {
+    font-family: 'Poppins', sans-serif;
+    color: #E26CBA;
+    font-weight: 800; 
+}

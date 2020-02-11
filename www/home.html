@@ -29,9 +29,9 @@
             <span class="material-icons">calendar_today</span>Events
         </a>
     </nav>
-    <nav class="sidenav">
-        <button onclick="toggleNav()">
-            <span class="material-icons" >menu</span>
+    <nav id="mySidenav" class="sidenav">
+        <button>
+            <span onclick="closeNav()" class="material-icons">chevron_right</span>
         </button>
         <a href="learn.html" class="sidenav__link">
             <span class="material-icons">school</span>Learn
@@ -45,11 +45,26 @@
         <a href="events.html" class="sidenav__link">
             <span class="material-icons">calendar_today</span>Events
         </a>
-        <a href="login.html" class="navbar__link" id="logout">
+        <a href="login.html" class="sidenav__link" id="logout">
             <span class="material-icons" id="logout">exit_to_app</span>Logout
         </a>
     </nav>
-    <body>
+    <div id="note" class="notifications">
+        <span onclick="closeNotes()" class="material-icons">close</span>
+        <h1>Notifications</h1>
+    </div>
+     <body>
+         <div id="main">
+            <span onclick="openNav()" class="material-icons">menu</span>
+            <span onclick="openNotes()" class="material-icons">notifications</span>
+         </div>
+         <div class="grid-container">
+             <div class="grid-item item1">1</div>
+             <div class="grid-item item2">2</div>
+             <div class="grid-item item3">3</div>  
+             <div class="grid-item item4">4</div>
+             <div class="grid-item item5">5</div>
+         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="js/logout.js"></script>

@@ -40,33 +40,3 @@ require_once("db_close.php");
 
 include_once("header_logged.php");
 ?>
-
-<div id="contentblog">
-<h1>Blog</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MtCMtC50gwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<form method="post" action="blog.php"> 
-    <p>Create a Blog Post</p>
-       Blog Post: <textarea rows="2" cols="30" name="comment"></textarea>
-    <input type="submit" name="submit" value="submit" />
-</form>
-
-    <?php
-        echo $message . $output;
-        ?>
-        <h4>Blog Entries</h4>
-        <?php echo $comments; ?>
-
-</div>
-<?php include_once("footer.php"); ?>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript">
-
-    var int=self.setInterval("showComments()",5000);
-
-    function showComments(){
-        $.post("ajax_comments.php", function ( data ) {
-            $("#comments").html( data );
-        });
-    }
-</script>

@@ -19,15 +19,13 @@ if ($username && $password) {
             $_SESSION['logged']   = "logged";
             $message              = "Success";
         } else {
-            $message = "<h2>Incorrect password!</h2>";
+            $message = "Incorrect password";
         }
     } else {
-        $message = "<h2>That user does not exist!</h2>" . "Please <a href='register.php'>try again</a>";
+        $message = "Please enter a valid username/password";
     }
     mysqli_free_result($result);
     require_once("db_close.php");
-} else {
-    $message = "<h1>Please enter a valid username/password</h1>";
-}
+} 
 echo $message;
 ?>

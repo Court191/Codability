@@ -12,13 +12,14 @@
     <body>
         <div class="wrapper">
             <h1> < Codability > </Codability></h1>
+            <p id="logout" class="logoutmessage"></p>
             <form id="loginForm" method="post">
                 <div class="buttons">
                     <input type='text' id="username" name='username'placeholder="Username" class="button1">
                     <input type='password' id="password" name='password' placeholder="Password" class="button2">
                 </div>
                 <div class="formbuttons">
-                    <input type='reset' name="reset" value='Reset' class="reset" onclick="reset()">
+                    <input type='reset' name="reset" value='Reset' class="reset" onclick="clear()">
                     <input type='submit' name="submit" value='Submit' class="submit"> 
                 </div>
             </form> 
@@ -29,5 +30,6 @@
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src="js/logout.js"></script>
     </body>
 </html>

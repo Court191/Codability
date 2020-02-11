@@ -14,16 +14,16 @@ $(document).ready(function() {
             $.ajax ({
                 type: 'POST',
                 url: 'http://ll16clc.leedsnewmedia.net/Codability/www/php/register.php',
-                    data: regform,
-                    processData: false, 
-                    contentType: false,
-                    success: function(response) {
-                    /* if(response == true)
-                            {
-                                document.getElementById("success").innerHTML = "Registration Successful!"; 
-                            } else {
-                                document.getElementById("error").innerHTML = "Wrong Details";
-                        } */ console.log(response)
+                data: regform,
+                processData: false, 
+                contentType: false,
+                success: function(response) {
+                if(response == "Success")
+                {
+                    document.getElementById("success").innerHTML = "Registration Successful!"; 
+                } else {
+                    document.getElementById("error").innerHTML = response;
+                       } 
                     }
                 });
             } else {
@@ -34,6 +34,6 @@ $(document).ready(function() {
 }); 
 
 // When reset button is clicked
-function reset() {
+function clear() {
   document.getElementById("registerForm").reset();
 }

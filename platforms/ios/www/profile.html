@@ -31,6 +31,7 @@
     </nav>
     <body> 
         <div class="top">
+            <img src="/www/img/profilebackground.png" alt="colour gradient" style="">
         </div>
         <div class="wrapper">
             <div class="buttons"> 
@@ -41,5 +42,13 @@
                 <button class="button"><a href="#">Delete Account</a></button>
             </div>
         </div>
+     <h2>Are you sure you want to delete your entire account?</h2>
+    <form id="delete" method="post">
+         Yes:<input type="radio" name="delete" value="1" /><br />
+         No: <input type="radio" name="delete" value="0" checked="checked" /><br />
+         <input type="submit" name="submit" value="submit" />
+    </form>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/delete.js"></script>
     </body>
 </html>

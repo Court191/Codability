@@ -34,7 +34,7 @@
 }
 .top {
    top: 0; 
-   height: 200px;
+   left: 0;
 }
 .wrapper {
     height: 100vh;

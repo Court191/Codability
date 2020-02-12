@@ -36,3 +36,12 @@ $(document).ready(function() {
 function clear() {
   document.getElementById("loginForm").reset();
 } 
+
+// Refresh comments
+ var int=self.setInterval("showComments()",5000);
+
+    function showComments(){
+        $.post("ajax_comments.php", function ( data ) {
+            $("#comments").html( data );
+        });
+    }

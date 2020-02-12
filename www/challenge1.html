@@ -5,7 +5,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <link rel="icon" href="img/favicon.png" type="image/png">
-        <link rel="stylesheet" type="text/css" href="css/profile.css">
+        <link rel="stylesheet" type="text/css" href="css/challenge1.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -29,20 +29,27 @@
             <span class="material-icons">calendar_today</span>Events
         </a>
     </nav>
-    <body> 
+    <body>
         <div class="top">
-            <img src="http://ll16clc.leedsnewmedia.net/Codability/www/img/profilebackground.png" alt="colour gradient" style="width:380px;height:400px;">
+            <h1>HTML Basics</h1>
         </div>
-        <div class="wrapper">
-            <div class="buttons"> 
-                <button class="button"><a href="#">Upload Image</a></button>
-
-                <button class="button"><a href="#">Change Password</a></button>
-                
-                <button class="button"><a href="#">Delete Account</a></button>
+        <div class="container">
+              <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                  <button class="btn">Answer 1</button>
+                  <button class="btn">Answer 2</button>
+                  <button class="btn">Answer 3</button>
+                  <button class="btn">Answer 4</button>
+                </div>
+              </div>
+              <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+                <a href="home.html"><button id="complete-btn" class="complete-btn btn hide">Complete</button></a>
             </div>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/delete.js"></script>
+        <script type="text/javascript" src="js/challenge1.js"></script>
     </body>
-</html>
+</html> 

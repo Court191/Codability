@@ -71,6 +71,7 @@ a {
   text-align: center;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
+  border-bottom: solid 1px #FFFFFF;
 }
 .material-icons {
     margin: 0.4em;
@@ -103,11 +104,6 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 .left {
     left: 0;
     padding: 15px;
@@ -124,6 +120,8 @@ a {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  color: #FFFFFF;
+  text-align: center;
 }
 .right {
     right: 0;

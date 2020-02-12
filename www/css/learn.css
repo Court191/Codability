@@ -98,11 +98,6 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 .left {
     left: 0;
     padding: 15px; 
@@ -130,7 +125,28 @@ a {
     border-color: #FFFFFF;
 }
 /* Resources */
+.resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 120px
+}
+p {
+    text-align: right;
+}
 .resource {
     background-color: #82C5F4;
     color: #3F0068;
+    overflow: hidden; 
+    width: 100vw; 
+    margin-bottom: 0.8em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,6 +1,15 @@
 .body {
   background-color: #FFFFFF;
 }
+h1 {
+    text-align: center; 
+    color: #3F0068;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
 /* Navigation Bar */
 .navbar {
   overflow: hidden;
@@ -32,16 +41,112 @@
 .navbar a:hover {
   color: #E26CBA;
 }
-.top {
-    overflow: hidden;
-    background-color: #E26CBA;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100vw;
+/* Side Navigation Bar */
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #E26CBA;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
-h1 {
-    text-align: center; 
-    color: #3F0068;
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.material-icons {
+    margin: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.sidenav a:hover {
+  color: #3F0068;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  background-color: #E26CBA; 
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+    left: 0;
+    padding: 15px; 
+}
+/* Notifications */
+.notifications {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #9E4287;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.right {
+    right: 0;
+    padding: 15px; 
+}
+.alert {
+    border: 1px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+/* Resources */
+.resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; 
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 120px
+}
+p {
+    text-align: right;
+}
+.resource {
+    background-color: #82C5F4;
+    color: #3F0068;
+    overflow: hidden; 
+    width: 100vw; 
+    margin-bottom: 0.8em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

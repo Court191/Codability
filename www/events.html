@@ -29,9 +29,55 @@
             <span class="material-icons">calendar_today</span>Events
         </a>
     </nav>
-    <body> 
-        <div class="top">
-            <h1>Events</h1>
+<!-- Settings -->
+    <nav id="mySidenav" class="sidenav">
+        <h1><span class="material-icons">settings</span>Settings</h1>
+            <span onclick="closeNav()" class="material-icons">chevron_right</span>
+        <a href="learn.html" class="sidenav__link">
+            <span class="material-icons">build</span>Preferences
+        </a>
+        <a href="discuss.html" class="sidenav__link">
+            <span class="material-icons">help</span>Help
+        </a>
+        <a href="profile.html" class="sidenav__link">
+            <span class="material-icons">person</span>Account
+        </a>
+        <a href="login.html" class="sidenav__link" id="logout">
+            <span class="material-icons" id="logout">exit_to_app</span>Logout
+        </a>
+    </nav>
+    <div id="note" class="notifications">
+        <h1>Notifications</h1>
+        <span onclick="closeNotes()" class="material-icons">close</span>
+        <div class="alert"> 
+            <p>Court191! I love the HTML basics...</p>
         </div>
+    </div>
+<!-- Main Content -->
+    <body> 
+        <div id="main">
+             <div class="left">
+                <span onclick="openNav()" class="material-icons">menu</span>
+             </div> 
+                <h1>Events</h1>
+             <div class="right">
+                <span onclick="openNotes()" class="material-icons">notifications</span>
+             </div>
+         </div>
+         <div class="events">
+             <input type="text" placeholder="Search..">
+             <input type="text" placeholder="Filter">
+             <div class="event">
+                <p>Event 1</p>
+             </div>
+             <div class="event">
+                <p>Event 2</p>
+             </div>
+             <div class="event">
+                <p>Event 3</p>
+             </div>
+        </div>
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script type="text/javascript" src="js/home.js"></script>
     </body>
 </html>

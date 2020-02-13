@@ -97,7 +97,6 @@ a {
   background-color: #82C5F4; 
   overflow: hidden;
   position: fixed; 
-  height: fixed;
   top: 0; 
   left: 0;
   width: 100vw;
@@ -121,6 +120,8 @@ a {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  color: #FFFFFF;
+  text-align: center;
 }
 .right {
     right: 0;
@@ -141,7 +142,7 @@ a {
 /* Grid */
 .grid-container {
   display: grid;
-  margin-top: 40px;
+  margin-top: 30px;
   grid-gap: 10px;
   background-color: #FFFFFF;
   padding: 10px;

@@ -1,0 +1,138 @@
+.body {
+  background-color: #FFFFFF;
+}
+/* Navigation Bar */
+.navbar {
+  overflow: hidden;
+  background-color: #3F0068;
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  width: 100vw; 
+  text-align: center; 
+}
+.navbar__links {
+    align-items: center;
+}
+.material-icons {
+    margin: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar a {
+  display: inline-grid; 
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2px 8px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.navbar a:hover {
+  color: #E26CBA;
+}
+.top {
+    overflow: hidden;
+    background-color: #3F0068;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw;
+}
+h1 {
+    text-align: center; 
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 0%, 100%); 
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 20%);
+  background-color: hsl(var(--hue), 84%, 73%);
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin:10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.complete-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  --hue: var(--hue-correct);
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}

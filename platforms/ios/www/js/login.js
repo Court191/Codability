@@ -12,7 +12,7 @@ $(document).ready(function() {
                 // Call Ajax
                 $.ajax({
                     type: 'POST',
-                    url: 'http://ll16clc.leedsnewmedia.net/Codability/www/php/login.php',
+                    url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/login.php',
                     data: form,
                     processData: false, 
                     contentType: false,

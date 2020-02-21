@@ -1,3 +1,4 @@
+$(document).ready(function() {
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const completeButton = document.getElementById('complete-btn')
@@ -122,3 +123,4 @@ const questions = [
     ]
   }
 ]
+});

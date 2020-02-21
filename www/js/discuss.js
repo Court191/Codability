@@ -1,47 +1,38 @@
-// When login button is clicked
+// When post button is clicked
 $(document).ready(function() {
-    var loginform = $("#loginForm");
-    $("#loginForm").on('submit', function(event) {
+    var forum = $("#forumPost");
+    $("#forumPost").on('submit', function(event) {
         event.preventDefault(); 
-        var usernameValue = document.getElementById("username").value;
-        var passwordValue = document.getElementById("password").value;
+        var commentValue = document.getElementById("commentbox").value;
+    
+    // Call Ajax for existing comments
+    $.ajax({
+        type: 'POST',
+        url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/discuss.php',
+        success: function(response) 
 
-        var form = new FormData(this); 
-        if(usernameValue && passwordValue)
-            {
-                // Call Ajax
-                $.ajax({
-                    type: 'POST',
-                    url: 'http://ll16clc.leedsnewmedia.net/Codability/www/php/login.php',
-                    data: form,
-                    processData: false, 
-                    contentType: false,
-                    success: function(response) {
-                            if(response == "Success")  
-                            {
-                                window.location.href="home.html"; 
-                            } else {
-                                document.getElementById("error").innerHTML = response;
-                            } 
-                        } 
-                    });
-            } else {
-                document.getElementById("error").innerHTML = "Please Fill All The Fields";
-        } 
-        return false;
+    // Call Ajax for new comment
+    $.ajax({
+        type: 'POST',
+        url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/discuss.php',
+        success: function(response) {
+                if(response == "Success")  
+                {
+                    document.getElementById("comment").innerHTML = response;
+                } else {
+                    document.getElementById("error").innerHTML = response;
+                } 
+            } 
+        });
+    return false;
     });
-});
+});  
 
-// When reset button is clicked
-function clear() {
-  document.getElementById("loginForm").reset();
-} 
-
-// Refresh comments
+/*// Refresh comments
  var int=self.setInterval("showComments()",5000);
 
     function showComments(){
         $.post("ajax_comments.php", function ( data ) {
             $("#comments").html( data );
         });
-    }
+    } */ 

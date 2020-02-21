@@ -153,3 +153,13 @@ img {
     justify-content: center;
     border-bottom: solid 4px #82C5F4; 
 }
+button {
+    background-color: #82C5F4;  
+    color: #3F0068; 
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 10px; 
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 0.3em; 
+}

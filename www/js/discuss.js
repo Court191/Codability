@@ -4,13 +4,29 @@ $(document).ready(function() {
     $("#forumPost").on('submit', function(event) {
         event.preventDefault(); 
         var commentValue = document.getElementById("commentbox").value;
+        var username = document.getElementById("username").value; 
     
     // Call Ajax for existing comments
     $.ajax({
         type: 'POST',
         url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/discuss.php',
-        success: function(response) 
-
+        data: 
+        
+        {
+            username: username, 
+            comment: comment
+        },
+        success: function(response)
+        {
+            document.getElementById("allcomments").innerHTML=response=document.getElementById("allcomments").innerHTML;
+            document.getElementById("commentbox").value""; 
+            document.getElementById("username").value"";
+        }
+    });
+        
+    if (commentValue && username)
+    {
+        
     // Call Ajax for new comment
     $.ajax({
         type: 'POST',
@@ -24,8 +40,10 @@ $(document).ready(function() {
                 } 
             } 
         });
+    }
     return false;
     });
+
 });  
 
 /*// Refresh comments

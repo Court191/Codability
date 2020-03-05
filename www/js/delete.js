@@ -4,21 +4,19 @@ var deleteaccount = $("#deleteForm");
     $("#deleteForm").on('submit', function(event) {
         event.preventDefault();
         
-        var deleteValue = $("value"); 
+        if ($('input[name=delete]:checked').val() == "1") {
+ 
             // Call AJAX    
             $.ajax({
                 type: 'POST',
                 url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/delete.php',
                 success: function() {
-                    if( deleteValue == "1") 
-                    {
-                        window.location.href = "index.html";
-                        document.getElementById("delete").innerHTML = "Account deleted";
-                    } else {
-                        window.location.href = "profile.html";
-                    }
-                }
+                        document.getElementById("delete").innerHTML = "Account Successfully Deleted";
+                    } 
             });
+        } else if ($('input[name=delete]:checked').val() == "0") {
+                    window.location.href = "profile.html";
+                  }
         return false; 
     }); 
 }); 

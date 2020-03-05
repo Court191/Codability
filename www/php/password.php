@@ -47,5 +47,4 @@
         }
     }
 require_once("db_close.php"); 
-include_once("header_logged.php");
 ?> 

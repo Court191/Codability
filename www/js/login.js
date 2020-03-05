@@ -5,7 +5,7 @@ $(document).ready(function() {
         event.preventDefault(); 
         var usernameValue = document.getElementById("username").value;
         var passwordValue = document.getElementById("password").value;
-
+        
         var form = new FormData(this); 
         if(usernameValue && passwordValue)
             {
@@ -19,7 +19,11 @@ $(document).ready(function() {
                     success: function(response) {
                             if(response == "Success")  
                             {
-                                window.location.href="home.html"; 
+                                window.location.href="home.html";  
+                                
+                                //Local Storage 
+                                window.localStorage.setItem("username", usernameValue);
+
                             } else {
                                 document.getElementById("error").innerHTML = response;
                             } 

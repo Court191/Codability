@@ -159,3 +159,8 @@ a:hover {
     color: #FFFFFF;
     text-decoration: underline; 
 }
+.deletemessage {
+    font-family: 'Poppins', sans-serif;
+    color: #9E4287;
+    font-weight: 800;
+}

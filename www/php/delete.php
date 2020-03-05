@@ -2,7 +2,6 @@
     require_once('checklog.php');
     include_once('functions.php');
     $sess_userID = $_SESSION['userID'];
-    $message = "hello";
     if(trim($_POST['submit'])=='submit'){
         if(trim($_POST['delete'] )==1) {
                 require_once("db_connect.php");
@@ -26,8 +25,6 @@
                         header('Location: index.html');
                 }
                 require_once("db_close.php");
-        }else{
-                header('location: index.html');
         }
     }
 ?>

@@ -7,6 +7,7 @@
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/discuss.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
         <link rel="icon" href="img/favicon.png" type="image/png">
         <link rel="stylesheet" type="text/css" href="css/discuss.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -36,10 +37,10 @@
     <nav id="mySidenav" class="sidenav">
         <h1><span class="material-icons">settings</span>Settings</h1>
             <span onclick="closeNav()" class="material-icons">chevron_right</span>
-        <a href="learn.html" class="sidenav__link">
+        <a href="" class="sidenav__link">
             <span class="material-icons">build</span>Preferences
         </a>
-        <a href="discuss.html" class="sidenav__link">
+        <a href="help.html" class="sidenav__link">
             <span class="material-icons">help</span>Help
         </a>
         <a href="profile.html" class="sidenav__link">
@@ -73,6 +74,7 @@
                 <textarea rows="3" col="60" name="comment" placeholder="Create a Post..." value="commentbox"></textarea>
                 <button><input type='submit' name='submit' value='Post' class="post"></button>
             </form>
+            <p id="post" class="postmessage"></p>
         </div>
     </body>
 </html>

@@ -25,8 +25,6 @@
                         header('Location: index.html');
                 }
                 require_once("db_close.php");
-        }else{
-                header('location: index.html');
         }
     }
 ?>

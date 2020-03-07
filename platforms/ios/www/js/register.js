@@ -21,6 +21,10 @@ $(document).ready(function() {
                 if(response == "Success")
                 {
                     document.getElementById("success").innerHTML = "Registration Successful!"; 
+                    
+                    //Local Storage 
+                    window.localStorage.setItem("username", usernameValue); 
+                    
                 } else {
                     document.getElementById("error").innerHTML = response;
                        } 

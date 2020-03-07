@@ -5,7 +5,7 @@ require_once("db_connect.php");
 require_once("functions.php");
 
 if ($_POST['submit'] == "submit") {
-    
+    $message = "Hello";
     $comment = clean_string($db_server, $_POST['comment']);
     if ($comment != '') {
         $query = "INSERT INTO comments (userID, comment) VALUES (" . $_SESSION['userID'] . ", '$comment')";

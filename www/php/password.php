@@ -24,7 +24,7 @@
                                         $repeatpassword = clean_string($db_server, $repeatpassword); 
                                         mysqli_select_db($db_server, $db_database);
                                         
-                                        $query="SELECT * FROM users WHERE username='". $_SESSION['username']."'"; 
+                                        $query="SELECT * FROM users WHERE username='". $_POST['username']."'"; 
                                         $result=mysqli_query($db_server, $query);
                                         if ($row = mysqli_fetch_array($result)){
                                             $db_password = $row['password'];

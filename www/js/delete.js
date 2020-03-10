@@ -16,7 +16,7 @@ var deleteaccount = $("#deleteForm");
                 data: {username: username}, 
                 success: function(data) {
                     console.log(data); 
-                        document.getElementById("delete").innerHTML = "Account Successfully Deleted";
+                        document.getElementById("delete").innerHTML = "Account Successfully Deleted! Please logout";
                     } 
             });
         } else if ($('input[name=delete]:checked').val() == "0") {

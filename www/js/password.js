@@ -13,7 +13,9 @@ $(document).ready(function() {
             $.ajax({
                 type: 'POST',
                 url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/password.php',
+                data: {username: username},
                 success: function(response) {
+                    console.log("hello123");
                     if( response == "") 
                     {
                         document.getElementById("change").innerHTML = "Password Change Successful";

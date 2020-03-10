@@ -3,14 +3,19 @@ $(document).ready(function() {
 var deleteaccount = $("#deleteForm");
     $("#deleteForm").on('submit', function(event) {
         event.preventDefault();
-        
+    
         if ($('input[name=delete]:checked').val() == "1") {
+            
+            //Get Storage 
+                var username = window.localStorage.getItem("username");
  
             // Call AJAX    
             $.ajax({
                 type: 'POST',
                 url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/delete.php',
-                success: function() {
+                data: {username: username}, 
+                success: function(data) {
+                    console.log(data); 
                         document.getElementById("delete").innerHTML = "Account Successfully Deleted";
                     } 
             });

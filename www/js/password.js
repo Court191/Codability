@@ -7,28 +7,32 @@ $(document).ready(function() {
         var newpasswordValue = document.getElementById("newpassword").value; 
         var repeatpasswordValue = document.getElementById("repeatpassword").value;
         
-        if (oldpassword && newpassword && repeatpassword){
-            if (newpassword == repeatpassword){
+        var passwordform = new FormData(this);
+        
+        if (oldpassword && newpassword && repeatpassword) {
+            
+            //Get Storage 
+                var username = window.localStorage.getItem("username");
+            
             // Call AJAX    
             $.ajax({
                 type: 'POST',
                 url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/password.php',
-                data: {username: username},
+                data: passwordform,
+                processData: false, 
+                contentType: false,
                 success: function(response) {
-                    console.log("hello123");
-                    if( response == "") 
-                    {
+                    if(response == "Success"){
                         document.getElementById("change").innerHTML = "Password Change Successful";
+                        console.log("Success");
                     } else {
                         document.getElementById("error").innerHTML = response;
+                        console.log("error");
                     }
                 }
-            });
-            } else {
-                document.getElementById("error").innerHTML = "Both password fields must match";
-            }
+            }); 
         } else {  document.getElementById("error").innerHTML = "Please Fill All The Fields";
-               } 
+        } 
         return false; 
     }); 
 }); 

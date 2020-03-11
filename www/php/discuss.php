@@ -4,7 +4,6 @@ require_once('checklog.php');
 require_once("db_connect.php");
 require_once("functions.php");
 
-if ($_POST['submit'] == "submit") {
     $message = "Hello";
     $comment = clean_string($db_server, $_POST['comment']);
     if ($comment != '') {
@@ -13,7 +12,6 @@ if ($_POST['submit'] == "submit") {
         mysqli_query($db_server, $query) or die("Insert failed: " . mysqli_error($db_server));
         $message = "Thanks for your comment!";
     }
-}
 
 // Print out existing comment
 $query  = "SELECT comments.commDate, comments.ID, comments.userID, comments.comment, users.username, comments.sentiment FROM comments LEFT JOIN users ON comments.userID = users.ID";

@@ -2,39 +2,37 @@
 $(document).ready(function() {
     var forum = $("#forumPost");
     $("#forumPost").on('submit', function(event) {
-        event.preventDefault(); 
-        var commentValue = document.getElementById("commentbox").value;
-        var username = document.getElementById("username").value; 
+        event.preventDefault();
+        
+        var commentValue = "";
+        //var comment = 
+       // var passwordValue = document.getElementById("password").value;
     
-    // Call Ajax for existing comments
+    /*// Call Ajax for existing comments
     $.ajax({
         type: 'POST',
         url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/discuss.php',
-        data: 
-        
+        data: {comment: comment},
+        success: function(response) 
         {
-            username: username, 
-            comment: comment
-        },
-        success: function(response)
-        {
-            document.getElementById("allcomments").innerHTML=response=document.getElementById("allcomments").innerHTML;
-            document.getElementById("commentbox").value""; 
-            document.getElementById("username").value"";
+            document.getElementById("allcomments").innerHTML= response;
         }
-    });
+    }); */
         
-    if (commentValue && username)
-    {
+    if (forum) {   
         
+        var commentValue = document.getElementById("#comment").value;
     // Call Ajax for new comment
     $.ajax({
         type: 'POST',
         url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/discuss.php',
+        data: {comment: comment},
         success: function(response) {
                 if(response == "Success")  
                 {
-                    document.getElementById("comment").innerHTML = response;
+                    //document.getElementById("comment").innerHTML = response;
+                    //var commentValue = document.getElementById("comment").value;
+                    //commentValue = document.getElementById("#comment").value;
                 } else {
                     document.getElementById("error").innerHTML = response;
                 } 

@@ -120,47 +120,49 @@ h1 {
     border-style: solid;
     border-color: #FFFFFF;
 }
+/* Delete */
 .wrapper {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
-}
-img {
-    text-align: center; 
-    margin-bottom: 1em;
-    border-radius: 50%;
-}
-.buttons {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
-.button {
-    background-color: #3F0068;  
-    color: #FFFFFF; 
+h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    border: none;
-    border-radius: 20px; 
+    color: #3F0068;
     text-align: center;
-    width: 11em; 
-    letter-spacing: 2px;
-    padding: 0.3em; 
-    margin-bottom: 0.8em;
 }
-button a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'Poppins Light', sans-serif; 
-}
-a:hover {
-    color: #FFFFFF;
-    text-decoration: underline; 
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3F0068;
 }
 .deletemessage {
     font-family: 'Poppins', sans-serif;
     color: #9E4287;
     font-weight: 800;
+    text-align: center; 
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.confirm {
+    background: #E26CBA; 
+    color: #FFFFFF; 
+    border: none;
+    margin:auto; 
+    align-items: center;
+    justify-content: center; 
+    margin: 1em; 
+    border-radius: 30px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
 }

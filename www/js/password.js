@@ -7,6 +7,8 @@ $(document).ready(function() {
         var newpasswordValue = document.getElementById("newpassword").value; 
         var repeatpasswordValue = document.getElementById("repeatpassword").value;
         
+        document.getElementById("username").innerHTML = window.localStorage.getItem("username");
+        
         var passwordform = new FormData(this);
         
         if (oldpassword && newpassword && repeatpassword) {

@@ -4,6 +4,7 @@
     require_once("functions.php");
 
     $submit = trim($_POST['submit']);
+    $username = $_POST['username'];
     $oldpassword = trim($_POST['oldpassword']);
     $newpassword = trim($_POST['newpassword']); 
     $repeatpassword = trim($_POST['repeatpassword']);
@@ -26,9 +27,12 @@
                                         mysqli_select_db($db_server, $db_database);
                                         
                                         $query="SELECT * FROM users WHERE username='". $username . "'"; 
+                                        //echo $query;
                                         $result=mysqli_query($db_server, $query);
+                                        //print_r($result);
                                         $message = "Hey";
-                                        if ($row = mysqli_fetch_array($result)){
+                                        $row = $result; 
+                                          if ($row = mysqli_fetch_array($result)) {
                                             $message = "Hiii";
                                             $db_password = $row['password'];
                                             $db_id = $row['ID'];
@@ -47,7 +51,7 @@
                 }
     }else{
             $message = "Please enter all fields";
-        }
+        } 
 require_once("db_close.php"); 
 echo $message; 
 ?> 

@@ -129,13 +129,14 @@ h1 {
     justify-content: center;
 }
 h2 {
+    text-align: center; 
+    color: #9E4287;
     font-family: 'Poppins', sans-serif;
-    color: #3F0068;
-    text-align: center;
 }
 h3 {
-    font-family: 'Poppins', sans-serif;
-    color: #3F0068;
+  font-family: 'Poppins', sans-serif;
+  color: #3F0068;
+  text-align: center;
 }
 .deletemessage {
     font-family: 'Poppins', sans-serif;

@@ -14,6 +14,8 @@ $(document).ready(function() {
             //Get Storage 
                 var username = window.localStorage.getItem("username");
             
+            formData.append('username', username);
+            
             // Call AJAX    
             $.ajax({
                 type: 'POST',

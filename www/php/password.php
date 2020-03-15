@@ -27,12 +27,12 @@
                                         mysqli_select_db($db_server, $db_database);
                                         
                                         $query="SELECT * FROM users WHERE username='". $username . "'"; 
-                                        //echo $query;
                                         $result=mysqli_query($db_server, $query);
-                                        //print_r($result);
-                                        $message = "Hey";
-                                        $row = $result; 
-                                          if ($row = mysqli_fetch_array($result)) {
+                                        $row = mysqli_fetch_array($result);
+                                        
+                                        echo $result;
+                                        $message = $result;
+                                          if ($row) {
                                             $message = "Hiii";
                                             $db_password = $row['password'];
                                             $db_id = $row['ID'];

@@ -30,21 +30,21 @@
                                         $result=mysqli_query($db_server, $query);
                                         $row = mysqli_fetch_array($result);
                                         
-                                        echo $result;
-                                        $message = $result;
+                                        //$message = $result;
                                           if ($row) {
-                                            $message = "Hiii";
                                             $db_password = $row['password'];
                                             $db_id = $row['ID'];
                                             if (password_verify($oldpassword, $db_password)) {
                                                 $hash = password_hash($newpassword, PASSWORD_DEFAULT); 
                                                 $query = "UPDATE users SET password= '$hash' WHERE ID=$db_id";
                                                 mysqli_query($db_server, $query) or die("Insert failed. ". mysqli_error($db_server)); 
-                                                $message = "Success";
+                                                $message = "Password Change Successful!";
+                                            }else{ 
+                                                $message = "Please ensure your old password is correct";
                                             }
                                            mysqli_free_result($result);
                                         }
-                                    }
+                                    } 
                              }
             }else{
                 $message = "Both password fields must match";

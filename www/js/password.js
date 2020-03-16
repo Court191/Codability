@@ -14,7 +14,7 @@ $(document).ready(function() {
             //Get Storage 
                 var username = window.localStorage.getItem("username");
             
-            formData.append('username', username);
+                passwordform.append('username', username);
             
             // Call AJAX    
             $.ajax({
@@ -26,10 +26,8 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success"){
                         document.getElementById("change").innerHTML = "Password Change Successful";
-                        console.log("Success");
                     } else {
                         document.getElementById("error").innerHTML = response;
-                        console.log("error");
                     }
                 }
             }); 
@@ -38,3 +36,8 @@ $(document).ready(function() {
         return false; 
     }); 
 }); 
+
+// When reset button is clicked
+function clear() {
+  document.getElementById("passwordForm").reset();
+} 

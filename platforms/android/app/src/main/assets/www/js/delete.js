@@ -1,5 +1,8 @@
 // When delete account button is clicked
 $(document).ready(function() {
+ 
+document.getElementById("username").innerHTML = window.localStorage.getItem("username");
+    
 var deleteaccount = $("#deleteForm");
     $("#deleteForm").on('submit', function(event) {
         event.preventDefault();

@@ -3,18 +3,21 @@
 require_once('checklog.php');
 require_once("db_connect.php");
 require_once("functions.php");
+  
+session_start();
 
-    $message = "Hello";
-    $comment = clean_string($db_server, $_POST['comment']);
-    if ($comment != '') {
-        $query = "INSERT INTO comments (username, comment) VALUES (" . $username['username'] . ", '$comment')";
-        mysqli_select_db($db_server, $db_database);
-        mysqli_query($db_server, $query) or die("Insert failed: " . mysqli_error($db_server));
-        $message = "Thanks for your comment!";
+if($_POST['submit'] == "submit"){
+
+$comment = clean_string($db_server, $_POST['comment']);
+if ($comment != '') {
+    $query = "INSERT INTO comments (username, comment) VALUES (" . $username['username'] . ", '$comment')";
+    mysqli_select_db($db_server, $db_database);
+    mysqli_query($db_server, $query) or die("Insert failed: " . mysqli_error($db_server));
+    $message = "Thanks for your comment!";
     }
-
+}
 // Print out existing comment
-$query  = "SELECT comments.commDate, comments.ID, comments.userID, comments.comment, users.username, comments.sentiment FROM comments LEFT JOIN users ON comments.username = username";
+$query  = "SELECT comments.commDate, comments.ID, comments.username, comments.comment, users.username, comments.sentiment FROM comments LEFT JOIN users ON comments.username = users.username";
 $result = mysqli_query($db_server, $query);
 if (!$result)
     die("Database access failed: " . mysqli_error($db_server));
@@ -36,6 +39,5 @@ mysqli_free_result($result);
 
 require_once("db_close.php");
 
-include_once("header_logged.php");
-echo $message; 
+echo $message;
 ?>

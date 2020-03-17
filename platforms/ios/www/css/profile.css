@@ -37,6 +37,11 @@ h1 {
     color: #3F0068;
     font-family: 'Poppins', sans-serif;
 }
+h2 {
+    text-align: center; 
+    color: #9E4287;
+    font-family: 'Poppins', sans-serif;
+}
 /* Side Navigation Bar */
 .sidenav {
   height: 100vh;

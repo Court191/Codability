@@ -13,17 +13,6 @@
   
         session_start();
 
-/*$stmt = $dbConnection->prepare('SELECT * FROM employees WHERE name = ?');
-$stmt->bind_param('s', $name); // 's' specifies the variable type => 'string'
-
-$stmt->execute();
-
-$result = $stmt->get_result();
-while ($row = $result->fetch_assoc()) {
-    // Do something with $row
-} */
-
-
         if ($oldpassword&&$newpassword&&$repeatpassword) {
             if ($newpassword==$repeatpassword){
                         if (strlen($newpassword)>25||strlen($newpassword)<6) {
@@ -38,25 +27,24 @@ while ($row = $result->fetch_assoc()) {
                                         mysqli_select_db($db_server, $db_database);
                                         
                                         $query="SELECT * FROM users WHERE username='". $username . "'"; 
-                                        //echo $query;
                                         $result=mysqli_query($db_server, $query);
-                                        //print_r($result);
-                                        $message = "Hey";
-                                        //if ($row = mysqli_fetch_array($result)){
-                                          if ($row = mysqli_fetch_array($result)) {
-                                            $row = $rows[0];
-                                            $message = "Hiii";
+                                        $row = mysqli_fetch_array($result);
+                                        
+                                        //$message = $result;
+                                          if ($row) {
                                             $db_password = $row['password'];
                                             $db_id = $row['ID'];
                                             if (password_verify($oldpassword, $db_password)) {
                                                 $hash = password_hash($newpassword, PASSWORD_DEFAULT); 
                                                 $query = "UPDATE users SET password= '$hash' WHERE ID=$db_id";
                                                 mysqli_query($db_server, $query) or die("Insert failed. ". mysqli_error($db_server)); 
-                                                $message = "Success";
+                                                $message = "Password Change Successful!";
+                                            }else{ 
+                                                $message = "Please ensure your old password is correct";
                                             }
                                            mysqli_free_result($result);
                                         }
-                                    }
+                                    } 
                              }
             }else{
                 $message = "Both password fields must match";

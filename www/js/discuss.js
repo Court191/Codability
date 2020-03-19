@@ -5,7 +5,7 @@ $(document).ready(function() {
         event.preventDefault();
         var commentValue = document.getElementById("comment").value;
         
-        var forum = new FormData(this);
+        var forum = new FormData(this); 
         
     if (forum) {
         

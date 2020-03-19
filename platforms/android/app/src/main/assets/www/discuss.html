@@ -69,13 +69,14 @@
                 <span onclick="openNotes()" class="material-icons">notifications</span>
              </div>
          </div>
-        
-        <div class="forum">
-            <form id="forumPost" method="post" class="forumpost">
-                <textarea rows="3" col="60" name="comment" placeholder="Create a Post..." id="comment"></textarea>
-                <button><input type='submit' name='submit' value='Post' class="post"></button>
-            </form>
-            <p id="post" class="postmessage"></p>
-        </div>
+          <div id="content" class="content">
+            <h1>Forum</h1>
+                <form id="forumPost" method='POST'>
+                   <textarea rows="3" col="60" name="comment" placeholder="Create a Post..." id="comment"></textarea>
+                   <button><input type='submit' name='submit' value='Post' class="post"></button>
+                </form>
+                <p id="error" class="errormessage"></p>
+                <p id="comments" class="postmessage"></p>
+            </div>
     </body>
 </html>

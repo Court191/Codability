@@ -1,0 +1,1 @@
+$query = "INSERT INTO comments (username, comment) VALUES (" . $username['username'] . ", $comment)";

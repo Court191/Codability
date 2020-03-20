@@ -56,7 +56,7 @@ if($_POST['submit'] == "Upload Image"){
 }
 
 $currentimagename = "profilepic.png";
-$query="SELECT imagename FROM users WHERE ID=". $_SESSION['userID'];
+$query="SELECT imagename FROM users WHERE ID=". $_SESSION['username'];
 $result = mysqli_query($db_server, $query) or die("image load failed. ". mysqli_error($db_server)); 
 if($row = mysqli_fetch_array($result)){
     if($row['imagename']<>""){
@@ -65,5 +65,6 @@ if($row = mysqli_fetch_array($result)){
 }
 mysqli_free_result($result);
 
-include_once("header_logged.php");
+echo $message;
+
 ?>

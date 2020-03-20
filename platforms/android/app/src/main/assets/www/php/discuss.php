@@ -6,17 +6,16 @@ require_once("functions.php");
   
 session_start();
 
-if($_POST['submit'] == "submit"){
     $message = "here";
 
 $comment = clean_string($db_server, $_POST['comment']);
 if ($comment != '') {
-    $query = "INSERT INTO comments (username, comment) VALUES (" . $username['username'] . ", '$comment')";
+    $query = "INSERT INTO comments (username, comment) VALUES (" . $username['username'] . ", $comment)";
     mysqli_select_db($db_server, $db_database);
     mysqli_query($db_server, $query) or die("Insert failed: " . mysqli_error($db_server));
     $message = "Thanks for your comment!";
     }
-}
+
 // Print out existing comment
 $query  = "SELECT comments.commDate, comments.ID, comments.username, comments.comment, users.username, comments.sentiment FROM comments LEFT JOIN users ON comments.username = users.username";
 $result = mysqli_query($db_server, $query);

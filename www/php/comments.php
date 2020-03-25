@@ -12,6 +12,9 @@ $result = mysqli_query($db_server, $query);
 if (!$result)
     die("Database access failed: " . mysqli_error($db_server));
 while ($row = mysqli_fetch_array($result)) {
+    
+//$allcomments = array("$row[0]" . ", " . $cars[1] . " and " . $cars[2] . ".";
+    
     //$comments .= "<p>" . $row['comment'] . "</p>";
     $comments .= "<p><em><strong>" . $row['username'] . "</strong>, " . $row['commDate'] . " (rating=" . $row['sentiment'] . ") " . "</em>"; 
     //CHECK THAT THE COMMENT USERID MATCHES SESSION USER ID
@@ -30,6 +33,6 @@ mysqli_free_result($result);
 
 require_once("db_close.php");
 
-echo $result;
+echo json_encode($result);
 
 ?>

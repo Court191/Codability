@@ -30,6 +30,6 @@ mysqli_free_result($result);
 
 require_once("db_close.php");
 
-echo $message;
+echo $result;
 
 ?>

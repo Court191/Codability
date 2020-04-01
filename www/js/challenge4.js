@@ -80,47 +80,46 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What does HTML stand for?',
+    question: 'What is the correct HTML for making a text area?',
     answers: [
-      { text: 'Hyperlinks and Text Markup Language', correct: true },
-      { text: 'Hyper Text Markup Language', correct: false },
-      { text: 'Home Tool Markup Language', correct: false }
+      { text: '<textarea>', correct: true },
+      { text: '<input type="textbox">', correct: false },
+      { text: '<input type="textarea">', correct: false }
     ]
   },
   {
-    question: 'Which character is used to indicate an end tag?',
+    question: 'What is the correct HTML element for playing audio files?',
     answers: [
-      { text: '<', correct: false },
-      { text: '*', correct: false },
-      { text: '/', correct: true },
-      { text: ';', correct: false }
+      { text: '<sound>', correct: false },
+      { text: '<audio>', correct: true },
+      { text: '<mp3>', correct: false }
     ]
   },
   {
-    question: 'Who is making the Web standards?',
+    question: 'Which input type defines a slider control?',
     answers: [
-      { text: 'Google', correct: false },
-      { text: 'Mozilla', correct: false },
-      { text: 'Microsoft', correct: false },
-      { text: 'The World Wide Web Consortium', correct: true }
+      { text: 'controls', correct: false },
+      { text: 'slider', correct: false },
+      { text: 'search', correct: false },
+      { text: 'range', correct: true }
     ]
   },
   {
-    question: 'What is the correct HTML for making a text input field?',
+    question: 'In HTML, which attribute is used to specify that an input field must be filled out?',
     answers: [
-      { text: '<input type="textfield">', correct: false },
-      { text: '<input type="text">', correct: true },
-      { text: '<textfield>', correct: false },
-      { text: '<textinput type="text">', correct: false }
+      { text: 'formvalidate', correct: false },
+      { text: 'placeholder', correct: false },
+      { text: 'validate', correct: false },
+      { text: 'required', correct: true }
     ]
   },
   {
-    question: 'Choose the correct HTML element for the largest heading:',
+    question: 'What is the correct HTML for making a checkbox?',
     answers: [
-      { text: '<head>', correct: false },
-      { text: '<h6>', correct: false },
-      { text: '<heading>', correct: false },
-      { text: '<h1>', correct: true }
+      { text: '<checkbox>', correct: false },
+      { text: '<input type="check">', correct: false },
+      { text: '<input type="checkbox">', correct: true },
+      { text: '<check>', correct: false }
     ]
   }
 ]

@@ -80,47 +80,46 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What does HTML stand for?',
+    question: 'How can you make a numbered list?',
     answers: [
-      { text: 'Hyperlinks and Text Markup Language', correct: true },
-      { text: 'Hyper Text Markup Language', correct: false },
-      { text: 'Home Tool Markup Language', correct: false }
+      { text: '<dl>', correct: false },
+      { text: '<list>', correct: false },
+      { text: '<ol>', correct: true },
+      { text: '<ul>', correct: false }
     ]
   },
   {
-    question: 'Which character is used to indicate an end tag?',
+    question: 'How can you make a bulleted list?',
     answers: [
-      { text: '<', correct: false },
-      { text: '*', correct: false },
-      { text: '/', correct: true },
-      { text: ';', correct: false }
+      { text: '<ol>', correct: false },
+      { text: '<ul>', correct: true },
+      { text: '<list>', correct: false },
+      { text: '<dl>', correct: false }
     ]
   },
   {
-    question: 'Who is making the Web standards?',
+    question: 'What is the correct HTML for making a drop-down list?',
     answers: [
-      { text: 'Google', correct: false },
-      { text: 'Mozilla', correct: false },
-      { text: 'Microsoft', correct: false },
-      { text: 'The World Wide Web Consortium', correct: true }
+      { text: '<input type="list">', correct: false },
+      { text: '<list>', correct: false },
+      { text: '<select>', correct: true },
+      { text: '<input type="dropdown">', correct: false }
     ]
   },
   {
-    question: 'What is the correct HTML for making a text input field?',
+    question: 'Choose the correct HTML element to define emphasized text',
     answers: [
-      { text: '<input type="textfield">', correct: false },
-      { text: '<input type="text">', correct: true },
-      { text: '<textfield>', correct: false },
-      { text: '<textinput type="text">', correct: false }
+      { text: '<i>', correct: false },
+      { text: '<em>', correct: true },
+      { text: '<italic>', correct: false }
     ]
   },
   {
-    question: 'Choose the correct HTML element for the largest heading:',
+    question: 'What is the correct HTML element for inserting a line break?',
     answers: [
-      { text: '<head>', correct: false },
-      { text: '<h6>', correct: false },
-      { text: '<heading>', correct: false },
-      { text: '<h1>', correct: true }
+      { text: '<lb>', correct: false },
+      { text: '<break>', correct: false },
+      { text: '<br>', correct: true }
     ]
   }
 ]

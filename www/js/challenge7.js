@@ -80,47 +80,46 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What does CSS stand for?',
+    question: 'How do you make the text bold?',
     answers: [
-      { text: 'Cascading Style Sheets', correct: true },
-      { text: 'Computer Style Sheets', correct: false },
-      { text: 'Creative Style Sheets', correct: false },
-      { text: 'Colorful Style Sheets', correct: false }
+      { text: 'font-weight:bold;', correct: true },
+      { text: 'style:bold;', correct: false },
+      { text: 'font:bold;', correct: false }
     ]
   },
   {
-    question: 'Which HTML attribute is used to define inline styles?',
+    question: 'Which property is used to change the font of an element?',
     answers: [
-      { text: 'class', correct: false },
-      { text: 'font', correct: false },
-      { text: 'style', correct: true },
-      { text: 'styles', correct: false }
+      { text: 'font-style', correct: false },
+      { text: 'font-weight', correct: false },
+      { text: 'font-family', correct: true }
     ]
   },
   {
-    question: 'Which HTML tag is used to define an internal style sheet?',
+    question: 'How do you make each word in a text start with a capital letter?',
     answers: [
-      { text: '<style>', correct: true },
-      { text: '<script>', correct: false },
-      { text: '<css>', correct: false }
+      { text: 'transform:capitalize', correct: false },
+      { text: 'You cannot do that with CSS', correct: false },
+      { text: 'text-style:capitalize', correct: false },
+      { text: 'text-transform:capitalize', correct: true }
     ]
   },
   {
-    question: 'How do you select elements with class name "test"?',
+   question: 'Which CSS property controls the text size?',
     answers: [
-      { text: '#test', correct: false },
-      { text: '.text', correct: true },
-      { text: '#test', correct: false },
-      { text: '*test', correct: false }
+      { text: 'font-style', correct: false },
+      { text: 'text-style', correct: false },
+      { text: 'text-size', correct: false },
+      { text: 'font-size', correct: true }
     ]
   },
   {
-    question: 'Which is the correct CSS syntax?',
+    question: 'How do you insert a comment in a CSS file?',
     answers: [
-      { text: '{body:color=black;}', correct: false },
-      { text: 'body:color=black;', correct: false },
-      { text: '{body;color:black;}', correct: false },
-      { text: 'body {color: black;}', correct: true }
+      { text: '// this is a comment //', correct: false },
+      { text: '// this is a comment', correct: false },
+      { text: '*this is a comment', correct: false },
+      { text: '/* this is a comment */', correct: true }
     ]
   }
 ]

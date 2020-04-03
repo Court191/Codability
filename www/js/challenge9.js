@@ -80,46 +80,48 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What does CSS stand for?',
+    question: 'What is the default value of the position property?',
     answers: [
-      { text: 'Cascading Style Sheets', correct: true },
-      { text: 'Computer Style Sheets', correct: false },
-      { text: 'Creative Style Sheets', correct: false },
-      { text: 'Colorful Style Sheets', correct: false }
+      { text: 'static', correct: true },
+      { text: 'fixed', correct: false },
+      { text: 'relative', correct: false },
+      { text: 'absolute', correct: false }
     ]
   },
   {
-    question: 'Which HTML attribute is used to define inline styles?',
+    question: 'What position property is relative to the browser window?',
     answers: [
-      { text: 'class', correct: false },
-      { text: 'font', correct: false },
-      { text: 'style', correct: true },
-      { text: 'styles', correct: false }
+      { text: 'relative', correct: false },
+      { text: 'sticky', correct: false },
+      { text: 'fixed', correct: true }, 
+      { text: 'abolsute', correct: false },
     ]
   },
   {
-    question: 'Which HTML tag is used to define an internal style sheet?',
+    question: 'Which position property sets the property to its default value?',
     answers: [
-      { text: '<style>', correct: true },
-      { text: '<script>', correct: false },
-      { text: '<css>', correct: false }
+      { text: 'static', correct: false },
+      { text: 'initial', correct: true },
+      { text: 'relative', correct: false },
+      { text: 'inherit', correct: false }
     ]
   },
   {
-    question: 'How do you select elements with class name "test"?',
+   question: 'Which element is positioned relative to its normal position?',
     answers: [
-      { text: '#test', correct: false },
-      { text: '.text', correct: true },
-      { text: '$test', correct: false },
-      { text: '*test', correct: false }
+      { text: 'absolute', correct: false },
+      { text: 'relative', correct: true },
+      { text: 'beside', correct: false },
+      { text: 'inherit', correct: false }
     ]
   },
   {
-    question: 'Where in an HTML document is the correct place to refer to an external style sheet?',
+    question: 'Which position propery is relative to its first positioned (not static) ancestor element?',
     answers: [
-      { text: 'In the <body> section', correct: false },
-      { text: 'At the end of the document', correct: false },
-      { text: 'In the <head> section', correct: true }
+      { text: 'absolute', correct: true },
+      { text: 'relative', correct: false },
+      { text: 'inherit', correct: false },
+      { text: 'sticky', correct: false }
     ]
   }
 ]

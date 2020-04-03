@@ -29,6 +29,7 @@ while ($row = mysqli_fetch_array($result)) {
     $comments .= "<br />" . $row['comment'] . "</p><hr />";
       echo $comments;
 }
+
 mysqli_free_result($result);
 
 require_once("db_close.php");

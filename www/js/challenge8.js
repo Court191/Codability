@@ -80,46 +80,45 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What does CSS stand for?',
+    question: 'Which is the correct CSS syntax?',
     answers: [
-      { text: 'Cascading Style Sheets', correct: true },
-      { text: 'Computer Style Sheets', correct: false },
-      { text: 'Creative Style Sheets', correct: false },
-      { text: 'Colorful Style Sheets', correct: false }
+      { text: 'body {color: black;}', correct: true },
+      { text: '{body;color:black;}', correct: false },
+      { text: '{body:color=black;}', correct: false },
+      { text: 'body:color=black;', correct: false }
     ]
   },
   {
-    question: 'Which HTML attribute is used to define inline styles?',
+    question: 'Which property is used to change the background color?',
     answers: [
-      { text: 'class', correct: false },
-      { text: 'font', correct: false },
-      { text: 'style', correct: true },
-      { text: 'styles', correct: false }
+      { text: 'bgcolor', correct: false },
+      { text: 'color', correct: false },
+      { text: 'background-color', correct: true }
     ]
   },
   {
-    question: 'Which HTML tag is used to define an internal style sheet?',
+    question: 'Which CSS property is used to change the text color of an element?',
     answers: [
-      { text: '<style>', correct: true },
-      { text: '<script>', correct: false },
-      { text: '<css>', correct: false }
+      { text: 'text-color', correct: false },
+      { text: 'color', correct: true },
+      { text: 'font-color', correct: false }
     ]
   },
   {
-    question: 'How do you select elements with class name "test"?',
+   question: 'How do you add a background color for all <h1> elements?',
     answers: [
-      { text: '#test', correct: false },
-      { text: '.text', correct: true },
-      { text: '$test', correct: false },
-      { text: '*test', correct: false }
+      { text: 'all.h1 {background-color:#FFFFFF;}', correct: false },
+      { text: 'h1 {background-color:#FFFFFF;}', correct: true },
+      { text: 'h1.all {background-color:#FFFFFF;}', correct: false }
     ]
   },
   {
-    question: 'Where in an HTML document is the correct place to refer to an external style sheet?',
+    question: 'What is the correct CSS for a linear gradient',
     answers: [
-      { text: 'In the <body> section', correct: false },
-      { text: 'At the end of the document', correct: false },
-      { text: 'In the <head> section', correct: true }
+      { text: 'linear-gradient(red, yellow);', correct: true },
+      { text: 'gradient-linear(red, yellow);', correct: false },
+      { text: 'gradient(red to yellow);', correct: false },
+      { text: 'gradient: red, yellow;', correct: false }
     ]
   }
 ]

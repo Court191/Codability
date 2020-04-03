@@ -80,46 +80,46 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What does CSS stand for?',
+    question: 'Which property is used to change the left margin of an element?',
     answers: [
-      { text: 'Cascading Style Sheets', correct: true },
-      { text: 'Computer Style Sheets', correct: false },
-      { text: 'Creative Style Sheets', correct: false },
-      { text: 'Colorful Style Sheets', correct: false }
+      { text: 'padding-left', correct: false },
+      { text: 'margin-left', correct: true },
+      { text: 'indent', correct: false }
     ]
   },
   {
-    question: 'Which HTML attribute is used to define inline styles?',
+    question: 'How would you set all the padding values to 25px?',
     answers: [
-      { text: 'class', correct: false },
-      { text: 'font', correct: false },
-      { text: 'style', correct: true },
-      { text: 'styles', correct: false }
+      { text: 'padding: 25px;', correct: true },
+      { text: 'all-padding: 25px;', correct: false },
+      { text: 'paddingall: 25px;', correct: false }, 
+      { text: 'allpadding(25);', correct: false }
     ]
   },
   {
-    question: 'Which HTML tag is used to define an internal style sheet?',
+    question: 'Which propery is used to change the bottom margin of an element?',
     answers: [
-      { text: '<style>', correct: true },
-      { text: '<script>', correct: false },
-      { text: '<css>', correct: false }
+      { text: 'bottom-margin', correct: false },
+      { text: 'margin-bottom', correct: true },
+      { text: 'padding-bottom', correct: false },
+      { text: 'bottom', correct: false }
     ]
   },
   {
-    question: 'How do you select elements with class name "test"?',
+   question: 'Which property is used so the browser calculates the margin',
     answers: [
-      { text: '#test', correct: false },
-      { text: '.text', correct: true },
-      { text: '$test', correct: false },
-      { text: '*test', correct: false }
+      { text: 'inherit', correct: false },
+      { text: 'calulate', correct: false },
+      { text: 'auto', correct: true }
     ]
   },
   {
-    question: 'Where in an HTML document is the correct place to refer to an external style sheet?',
+    question: 'Which property is used to adapt the margin from parent element?',
     answers: [
-      { text: 'In the <body> section', correct: false },
-      { text: 'At the end of the document', correct: false },
-      { text: 'In the <head> section', correct: true }
+      { text: 'inherit', correct: true },
+      { text: 'adopt', correct: false },
+      { text: 'adjust', correct: false },
+      { text: 'auto', correct: false }
     ]
   }
 ]

@@ -11,3 +11,17 @@ then manipulate it in javascript to get it looking how you want.
 you'll need to look into how you can send this result back to javascript (1 clue, arrays!), 
 
 and then once you've given it back to javascript look at how you can go through this data and present it how you want.
+
+    //CHECK THAT THE COMMENT USERID MATCHES SESSION USER ID
+    /*if ($row['username'] == $_SESSION['username']) {
+        $comments .= " <a href='delete_post.php?pID=" . $row['ID'] . "'>Delete</a>";
+    }
+    if (!isset($_SESSION["liked_" . $row['ID']])) {
+        $comments .= "<a href='like.php?likeid=" . $row['ID'] . "'>Like</a>";
+    } else {
+        $comments .= "Liked";
+    }
+    $comments .= "<br />" . $row['comment'] . "</p><hr />";
+      echo $comments; */
+
+$comments .= "<p><em><strong>" . $row['username'] . "</strong>, " . $row['commDate'] . " (rating=" . $row['sentiment'] . ") " . "</em>";

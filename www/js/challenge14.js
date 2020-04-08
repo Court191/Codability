@@ -97,29 +97,28 @@ const questions = [
     ]
   },
   {
-    question: 'How do you declare a JavaScript variable?',
+    question: 'Which loop goes through a block of code once, and then repeats the loop while a specified condition is true?',
     answers: [
-      { text: 'var carName;', correct: true },
-      { text: 'variable carName;', correct: false },
-      { text: 'v carName;', correct: false }
+      { text: 'for loop', correct: false },
+      { text: 'while loop', correct: true },
+      { text: 'for each loop', correct: false },
+      { text: 'do while loop', correct: false }
     ]
   },
   {
-   question: 'Which operator is used to assign a value to a variable?',
+   question: 'Which loop goes through the properties of an object?',
     answers: [
-      { text: '*', correct: false },
-      { text: 'x', correct: false },
-      { text: '=', correct: true },
-      { text: '-', correct: false }
+      { text: 'for each loop', correct: false },
+      { text: 'while loop', correct: false },
+      { text: 'for in loop', correct: true },
+      { text: 'do while loop', correct: false }
     ]
   },
   {
-    question: 'Which statement answers function call?',
+    question: 'JavaScript loops are used to repeatedly run a block of code, until a certain condition is met',
     answers: [
-      { text: 'return', correct: true },
-      { text: 'fetch', correct: false },
-      { text: 'collect', correct: false },
-      { text: 'answer', correct: false }
+      { text: 'True', correct: true },
+      { text: 'False', correct: false }
     ]
   }
 ]

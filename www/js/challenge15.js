@@ -80,45 +80,44 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'How do you create a function in JavaScript?',
+    question: 'What is the correct way to write a JavaScript array?',
     answers: [
-      { text: 'function = myFunction()', correct: false },
-      { text: 'function myFunction()', correct: true },
-      { text: 'function:myFunction()', correct: false }
+      { text: 'var colors = (1:"red", 2:"green", 3:"blue")', correct: false },
+      { text: 'var colors = ["red", "green", "blue"]', correct: true },
+      { text: 'var colors = "red", "green", "blue"', correct: false }
     ]
   },
   {
-    question: 'How do you call a function named "myFunction"?',
+    question: 'An array is a single variable that is used to store different elements',
     answers: [
-      { text: 'myFunction()', correct: true },
-      { text: 'call myFunction()', correct: false },
-      { text: 'call function myFunction()>', correct: false }
+      { text: 'True', correct: true },
+      { text: 'False', correct: false }
     ]
   },
   {
-    question: 'How do you declare a JavaScript variable?',
+    question: 'var fruits = ["Banana", "Orange", "Apple", "Mango"]; How do you get the measure of the array?',
     answers: [
-      { text: 'var carName;', correct: true },
-      { text: 'variable carName;', correct: false },
-      { text: 'v carName;', correct: false }
+      { text: 'fruits.length;', correct: true },
+      { text: 'fruits.measure;', correct: false },
+      { text: 'fruits.range;', correct: false }
     ]
   },
   {
-   question: 'Which operator is used to assign a value to a variable?',
+   question: 'What is the best loop for when using arrays?',
     answers: [
-      { text: '*', correct: false },
-      { text: 'x', correct: false },
-      { text: '=', correct: true },
-      { text: '-', correct: false }
+      { text: 'for loop', correct: false },
+      { text: 'for in loop', correct: false },
+      { text: 'for each loop', correct: true },
+      { text: 'for loop', correct: false }
     ]
   },
   {
-    question: 'Which statement answers function call?',
+    question: 'Arrays are a special type of objects. Which operator in JavaScript returns "object" for arrays?',
     answers: [
-      { text: 'return', correct: true },
-      { text: 'fetch', correct: false },
-      { text: 'collect', correct: false },
-      { text: 'answer', correct: false }
+      { text: 'typeof', correct: true },
+      { text: 'number', correct: false },
+      { text: 'type', correct: false },
+      { text: 'instanceof', correct: false }
     ]
   }
 ]

@@ -98,7 +98,7 @@ const questions = [
     ]
   },
   {
-    question: 'An else statement is an alternative statement that is executed if the result of a previous test condition evaluates to false.',
+    question: 'An else statement is an alternative statement that is executed if the result of a previous test condition evaluates to false',
     answers: [
       { text: 'True', correct: true },
       { text: 'False', correct: false }

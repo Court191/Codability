@@ -14,6 +14,11 @@ $(document).ready(function() {
         
                 forum.append('username', username);
         
+        //Display the values
+                for (var value of forum.values(username)) {
+                   // console.log(value);
+                }
+        
     // Call Ajax for new comment
     $.ajax({
         type: 'POST',
@@ -25,15 +30,13 @@ $(document).ready(function() {
                 if(response == "Success")  
                 {
                   document.getElementById("comment").innerHTML = response;
-                } else {
-                    console.log(response); 
+                } else { 
                     document.getElementById("error").innerHTML = response;
                 } 
             } 
         });
-    } else {
-            document.getElementById("error").innerHTML = "Please Fill in your Post";
-        }
+    }       
+    
     return false;
     });
 

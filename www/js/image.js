@@ -10,7 +10,12 @@ $(document).ready(function() {
             //Get Storage 
                 var username = window.localStorage.getItem("username");
             
-                imageformorm.append('username', username);
+                imageform.append('username', username);
+        
+                //Display the values
+                for (var value of forum.values(username)) {
+                   // console.log(value);
+                }
             
             // Call AJAX    
             $.ajax({

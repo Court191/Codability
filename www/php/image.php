@@ -65,6 +65,6 @@ if($row = mysqli_fetch_array($result)){
 }
 mysqli_free_result($result);
 
-echo $message;
+echo json_encode($message);
 
 ?>

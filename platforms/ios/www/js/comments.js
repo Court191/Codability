@@ -9,10 +9,10 @@ $(document).ready(function() {
         $.ajax({
         type: 'GET',
         url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/comments.php',
-        success: function(response) 
-        {
-            console.log(response);
-            document.getElementById("allcomments").innerHTML= response;
+        success: function(result) {
+            var arr = JSON.parse(result);
+            console.log(arr);
+            document.getElementById("allcomments").innerHTML= result;
         }
     });
 }); 

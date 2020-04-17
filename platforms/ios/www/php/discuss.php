@@ -10,14 +10,17 @@ $username = $_POST['username'];
 
 $comment = clean_string($db_server, $_POST['comment']);
 if ($comment != '') {
-    $query = "INSERT INTO comments (username, comment) VALUES (username, comment)";
+    $query = "INSERT INTO comments (username, comment) VALUES ('" . $username . "', '" . $comment . "')";
     mysqli_select_db($db_server, $db_database);
     mysqli_query($db_server, $query) or die("Insert failed: " . mysqli_error($db_server));
     $message = "Thanks for your comment!";
+    } 
+    else {
+        $message = "Please Fill in your Post";
     }
 
 require_once("db_close.php");
 
-echo $message;
+echo $comment;
 
 ?>

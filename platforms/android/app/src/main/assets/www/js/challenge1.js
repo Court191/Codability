@@ -93,16 +93,16 @@ const questions = [
       { text: '<', correct: false },
       { text: '*', correct: false },
       { text: '/', correct: true },
-      { text: '/', correct: false }
+      { text: ';', correct: false }
     ]
   },
   {
-    question: 'How can you make a bulleted list?',
+    question: 'Who is making the Web standards?',
     answers: [
-      { text: '<list>', correct: false },
-      { text: '<dl>', correct: false },
-      { text: '<ol>', correct: false },
-      { text: '<ul>', correct: true }
+      { text: 'Google', correct: false },
+      { text: 'Mozilla', correct: false },
+      { text: 'Microsoft', correct: false },
+      { text: 'The World Wide Web Consortium', correct: true }
     ]
   },
   {

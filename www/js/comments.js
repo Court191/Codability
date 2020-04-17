@@ -11,10 +11,14 @@ $(document).ready(function() {
         url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/comments.php',
         success: function(result) {
             var arr = JSON.parse(result);
+            
+           
             console.log(arr);
             document.getElementById("allcomments").innerHTML= result;
         }
     });
+    
+    return false;
 }); 
 
 /*// Refresh comments

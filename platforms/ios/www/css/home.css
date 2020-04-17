@@ -131,6 +131,13 @@ a {
     overflow: hidden;
     background-color: #3F0068; 
     left: 0; 
+    margin-top: 30px;
+    width: 100vw; 
+}
+.subject1 {
+    overflow: hidden;
+    background-color: #3F0068; 
+    left: 0; 
     margin-top: 100px;
     width: 100vw; 
 }
@@ -147,7 +154,14 @@ a {
   background-color: #FFFFFF;
   padding: 10px;
 }
-
+.grid-container3 {
+  display: grid;
+  margin-top: 30px;
+  grid-gap: 10px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin-bottom: 100px;
+}
 .grid-item {
   background-color: #E26CBA;
   padding: 20px;

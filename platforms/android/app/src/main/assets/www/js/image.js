@@ -10,7 +10,7 @@ $(document).ready(function() {
             //Get Storage 
                 var username = window.localStorage.getItem("username");
             
-                imageformorm.append('username', username);
+                imageform.append('username', username);
             
             // Call AJAX    
             $.ajax({

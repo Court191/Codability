@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+   <head>
         <meta http-equiv="Content-Security-Policy" content="default-src *; img-src 'self' https://ll16clc.leedsnewmedia.net/ data:; style-src 'self' https://* 'unsafe-inline'; script-src 'self' https://* 'unsafe-inline' 'unsafe-eval'; connect-src https://ll16clc.leedsnewmedia.net/ https://cors-anywhere.herokuapp.com/;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/preferences.js"></script>
         <link rel="icon" href="img/favicon.png" type="image/png">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/preferences.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <title>Codability</title>
     </head>
-<!-- Main Content -->
-    <body> 
-        <div class="wrapper">
-            <img class="logo" src="img/Logo.png" alt="logo" style="width:200px;height:200px;">
-            <div class="buttons"> 
-                <button class="button1"><a href="login.html">Login</a></button>
-
-                <button class="button2"><a href="register.html">Register</a></button>
-            </div>
-            <p id="logout" class="logoutmessage"></p>
-        </div>
-    </body>
-</html>
+<div>
+	<input type="checkbox" class="checkbox" id="check" />
+	<label class="label" for="check">
+		<span class="material-icons">brightness_2</span>
+		<span class="material-icons">wb_sunny</span>
+		<div class="ball"></div>
+	</label>
+</div>
+</html> 

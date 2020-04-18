@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1393ae7-5f02-4a14-bf29-59d9af973162" name="Default Changelist" comment="" />
+    <list default="true" id="f1393ae7-5f02-4a14-bf29-59d9af973162" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/challenge1.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/challenge1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/php/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/php/image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/Codability.xcworkspace/xcuserdata/courtneylouisecox.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Codability.xcworkspace/xcuserdata/courtneylouisecox.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/js/challenge1.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/js/challenge1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/js/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/js/comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/js/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/js/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/php/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/php/image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/php/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/php/image.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +43,9 @@
         <projects_view />
       </state>
     </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="20" />
@@ -55,12 +87,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
@@ -96,7 +129,7 @@
     <frame x="20" y="43" width="1400" height="769" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33431518" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33946982" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />

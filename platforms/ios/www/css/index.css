@@ -1,12 +1,9 @@
 body {
     background: #3F0068; 
 }
-h1 {
-    color: #FFFFFF; 
-    font-family: 'Poppins', sans-serif; 
+.logo { 
     text-align: center; 
-    font-size: 40px;
-    letter-spacing: 3px; 
+    margin-bottom: 50px;
 }
 .wrapper {
     height: 100vh;

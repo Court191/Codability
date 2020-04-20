@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-     var commentValue = document.getElementById("allcomments").value; 
+     var comments = document.getElementById("allcomments").value; 
     
      //Get Storage 
                 var username = window.localStorage.getItem("username");
@@ -11,14 +11,19 @@ $(document).ready(function() {
         url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/comments.php',
         success: function(result) {
             var arr = JSON.parse(result);
-            var htmlString = "";
             
-            for (i = 0; i < result.length; i++){
-                htmlString += "<p>" + arr[i] + ".</p>"; 
-            }
+            for(var i = 0; i < arr.length; i++) {
+                var obj = arr[i];
+
+                //console.log(obj.username, obj.comment, obj.commDate, obj.sentiment);
+                console.log(obj);
                 
-            console.log(arr);
-            document.getElementById("allcomments").innerHTML= result;
+                var output = document.getElementById("allcomments"); 
+                output.innerHTML = (obj.username + ' ' + obj.comment + ' ' + obj.commDate + ' ' + obj.sentiment);  
+                
+                //document.getElementById("allcomments").innerHTML= obj.username, obj.comment;         
+            }
+
         }
     });
     

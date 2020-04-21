@@ -3,6 +3,8 @@
     require_once("functions.php");
     require_once("db_connect.php");
 
+$username = $_POST['username'];
+
 $message = "Hello!";
 if($_POST['submit'] == "Upload Image"){
     $target_dir = "images/";
@@ -44,7 +46,7 @@ if($_POST['submit'] == "Upload Image"){
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
             
             $uploadedfilename= basename( $_FILES["fileToUpload"]["name"]);
-            $query = "UPDATE users SET imagename='$uploadedfilename' WHERE ID=" . $_SESSION['userID'];
+            $query = "UPDATE users SET imagename='$uploadedfilename' WHERE username='$username'";
             mysqli_query($db_server, $query) or die("Insert failed. ". mysqli_error($db_server)); 
             $message = "<strong>Image $uploadedimage upload successful!</strong>";
             
@@ -56,7 +58,7 @@ if($_POST['submit'] == "Upload Image"){
 }
 
 $currentimagename = "profilepic.png";
-$query="SELECT imagename FROM users WHERE ID=". $_SESSION['username'];
+$query="SELECT imagename FROM users WHERE username='$username'"; 
 $result = mysqli_query($db_server, $query) or die("image load failed. ". mysqli_error($db_server)); 
 if($row = mysqli_fetch_array($result)){
     if($row['imagename']<>""){

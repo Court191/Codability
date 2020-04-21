@@ -22,6 +22,9 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success"){
                         document.getElementById("image").innerHTML = "Image Change Successful";
+                        
+                        //Local Storage 
+                                window.localStorage.setItem("fileToUpload", imageValue);
                     } else {
                         console.log(response); 
                         document.getElementById("error").innerHTML = response;

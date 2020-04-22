@@ -15,13 +15,11 @@ $(document).ready(function() {
             for(var i = 0; i < arr.length; i++) {
                 var obj = arr[i];
 
-                //console.log(obj.username, obj.comment, obj.commDate, obj.sentiment);
-                console.log(obj);
+                console.log(obj);   
                 
                 var output = document.getElementById("allcomments"); 
-                output.innerHTML = (obj.username + ' ' + obj.comment + ' ' + obj.commDate + ' ' + obj.sentiment);  
+                output.innerHTML += (obj.username + ' ' + obj.comment + ' ' + obj.commDate + ' ' + obj.sentiment + '<br>'); 
                 
-                //document.getElementById("allcomments").innerHTML= obj.username, obj.comment;         
             }
 
         }
@@ -30,11 +28,11 @@ $(document).ready(function() {
     return false;
 }); 
 
-/*// Refresh comments
+/*//Refresh comments
  var int=self.setInterval("showComments()",5000);
 
     function showComments(){
-        $.post("ajax_comments.php", function ( data ) {
-            $("#comments").html( data );
+        $.post("comments.php", function ( arr ) {
+            $("#allcomments").html( arr );
         });
     } */

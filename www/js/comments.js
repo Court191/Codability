@@ -13,12 +13,11 @@ $(document).ready(function() {
             var arr = JSON.parse(result);
             
             for(var i = 0; i < arr.length; i++) {
-                var obj = arr[i];
-
-                console.log(obj);   
+                var obj = arr[i];   
                 
-                var output = document.getElementById("allcomments"); 
-                output.innerHTML += (obj.username + ' ' + obj.comment + ' ' + obj.commDate + ' ' + obj.sentiment + '<br>'); 
+                var output = document.getElementById("allcomments");  
+                
+                output.innerHTML += '<div class="comment-container"><div class="username">'+obj.username+'</div><div class="comment">'+obj.comment+'</div><div class="date">'+obj.commDate+'</div><div class="like">'+obj.sentiment+'</div></div>';
                 
             }
 

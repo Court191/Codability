@@ -1,29 +1,74 @@
-<html>
-  <head>
-    <title>Todo App</title>
-    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
-    <link rel="stylesheet" href="css/wit.css" type="text/css" media="screen" charset="utf-8">    
-  </head>
-  <body>
-    <div class="container">
-      <p>
-        <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
-      </p>
-      
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-        <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-        <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-        
-      </ul>
-      
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-      </ul>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src *; img-src 'self' https://ll16clc.leedsnewmedia.net/ data:; style-src 'self' https://* 'unsafe-inline'; script-src 'self' https://* 'unsafe-inline' 'unsafe-eval'; connect-src https://ll16clc.leedsnewmedia.net/ https://cors-anywhere.herokuapp.com/;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
+        <script type="text/javascript" src="js/logout.js"></script>
+        <script type="text/javascript" src="js/wit.js"></script>
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="css/wit.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <title>Codability</title>
+    </head>
+<!-- Navigation -->
+    <nav class="navbar">
+        <a href="learn.html" class="navbar__link">
+            <span class="material-icons">school</span>Learn
+        </a>
+        <a href="discuss.html" class="navbar__link">
+            <span class="material-icons">question_answer</span>Discuss
+        </a>
+        <a href="home.html" class="navbar__link">
+            <span class="material-icons">home</span>Home
+        </a>
+        <a href="profile.html" class="navbar__link">
+            <span class="material-icons">person</span>Profile
+        </a>
+        <a href="events.html" class="navbar__link">
+            <span class="material-icons">calendar_today</span>Events
+        </a>
+    </nav>
+<!-- Settings -->
+    <nav id="mySidenav" class="sidenav">
+        <h1><span class="material-icons">settings</span>Settings</h1>
+            <span onclick="closeNav()" class="material-icons">chevron_right</span>
+        <a href="" class="sidenav__link">
+            <span class="material-icons">build</span>Preferences
+        </a>
+        <a href="wit.html" class="sidenav__link">
+            <span class="material-icons">change_history</span>Women in Tech
+        </a>
+        <a href="help.html" class="sidenav__link">
+            <span class="material-icons">help</span>Help
+        </a>
+        <a class="sidenav__link" id="logout" click="signout">
+            <span class="material-icons" id="logout" click="signout">exit_to_app</span>Logout
+        </a>
+    </nav>
+    <div id="note" class="notifications">
+        <h1>Notifications</h1>
+        <span onclick="closeNotes()" class="material-icons">close</span>
+        <div class="alert"> 
+            <p>Court191! I love the HTML basics...</p>
+        </div>
     </div>
-
-    <script type="text/javascript" src="js/wit.js"></script>
-
-  </body>
+<!-- Main Content -->
+     <body>
+         <div id="main">
+             <div class="left">
+                <span onclick="openNav()" class="material-icons">menu</span>
+             </div> 
+                <h1>WIT</h1>
+             <div class="right">
+                <span onclick="openNotes()" class="material-icons">notifications</span>
+             </div>
+         </div>
+         <div id="date" class="date"> </div>
+    </body>
 </html>

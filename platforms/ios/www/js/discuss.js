@@ -35,8 +35,9 @@ $(document).ready(function() {
                 } 
             } 
         });
-    }       
-    
+    } else { 
+        document.getElementById("error").innerHTML = "Please Fill in your Post";
+    }        
     return false;
     });
 

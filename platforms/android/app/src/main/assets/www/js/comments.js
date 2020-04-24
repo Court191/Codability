@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-     var commentValue = document.getElementById("allcomments").value; 
+     var comments = document.getElementById("allcomments").value; 
     
      //Get Storage 
                 var username = window.localStorage.getItem("username");
@@ -11,25 +11,27 @@ $(document).ready(function() {
         url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/comments.php',
         success: function(result) {
             var arr = JSON.parse(result);
-            var htmlString = "";
             
-            for (i = 0; i < result.length; i++){
-                htmlString += "<p>" + arr[i] + ".</p>"; 
-            }
+            for(var i = 0; i < arr.length; i++) {
+                var obj = arr[i];   
                 
-            console.log(arr);
-            document.getElementById("allcomments").innerHTML= result;
+                var output = document.getElementById("allcomments");  
+                
+                output.innerHTML += '<div class="comment-container"><div class="username">'+obj.username+'</div><div class="comment">'+obj.comment+'</div><div class="date">'+obj.commDate+'</div><div class="like">'+obj.sentiment+'</div></div>';
+                
+            }
+
         }
     });
     
     return false;
 }); 
 
-/*// Refresh comments
+/*//Refresh comments
  var int=self.setInterval("showComments()",5000);
 
     function showComments(){
-        $.post("ajax_comments.php", function ( data ) {
-            $("#comments").html( data );
+        $.post("comments.php", function ( arr ) {
+            $("#allcomments").html( arr );
         });
     } */

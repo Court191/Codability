@@ -14,7 +14,6 @@ if (!$result)
 while ($row = mysqli_fetch_array($result)) {
     
     $comments[] = $row; 
-
 }
 
 mysqli_free_result($result);

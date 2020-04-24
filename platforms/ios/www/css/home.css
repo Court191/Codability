@@ -8,7 +8,6 @@ h1 {
 }
 h2 {
     text-align: center; 
-    color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
 }
 a {
@@ -127,19 +126,26 @@ a {
     right: 0;
     padding: 15px;
 }
-.subject {
-    overflow: hidden;
-    background-color: #3F0068; 
-    left: 0; 
-    margin-top: 30px;
-    width: 100vw; 
-}
 .subject1 {
     overflow: hidden;
-    background-color: #3F0068; 
-    left: 0; 
+    border: solid 4px;
+    border-color: #E26CBA;
+    color: #E26CBA; 
     margin-top: 100px;
-    width: 100vw; 
+}
+.subject2 {
+    overflow: hidden;
+    border: solid 4px;
+    border-color: #3F0068; 
+    color: #3F0068;
+    margin-top: 30px; 
+}
+.subject3 {
+    overflow: hidden;
+    border: solid 4px;
+    border-color: #9E4287;
+    color: #9E4287;
+    margin-top: 30px;
 }
 .alert {
     border: 1px;
@@ -174,4 +180,50 @@ a {
 .item3 {
   grid-column: 1 / span 2;
   grid-row: 2;
+}
+.triangle {
+    overflow: hidden; 
+	width: 0;
+	height: 0;
+	border-right: 50px solid  transparent; 
+	border-left: 50px solid  transparent; 
+	border-bottom: 86.60254px solid #E26CBA; 
+    margin: 10px;
+    margin-left: 130px;
+}
+.triangle2 {
+    overflow: hidden; 
+	width: 0;
+	height: 0;
+	border-right: 50px solid  transparent; 
+	border-left: 50px solid  transparent; 
+	border-bottom: 86.60254px solid #3F0068; 
+    margin: 10px;
+    margin-left: 130px;
+}
+.triangle3 {
+    overflow: hidden; 
+	width: 0;
+	height: 0;
+	border-right: 50px solid  transparent; 
+	border-left: 50px solid  transparent; 
+	border-bottom: 86.60254px solid #9E4287; 
+    margin: 10px;
+    margin-left: 130px;
+}
+.social {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: fixed; 
+    bottom: 0;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.socialicons {
+    margin: 0.7em;
 }

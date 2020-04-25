@@ -179,14 +179,12 @@ button {
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
     font-weight: 800;
+    font-size: 14px;
 }
 .comment-container {
     margin-bottom: 20px;
     display: block;
     width: 80vw;
-}
-#allcomments>.comment-container>div{
- 
 }
 #allcomments>.comment-container .username{
     text-align: left;

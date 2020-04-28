@@ -7,6 +7,7 @@
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/profile.js"></script>
+        <script type="text/javascript" src="js/image.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="js/logout.js"></script>
         <link rel="icon" href="img/favicon.png" type="image/png">
@@ -85,11 +86,12 @@
             <img src="https://ll16clc.leedsnewmedia.net/Codability/www/img/profilepic.png" alt="profilepic" style="width:200px;height:200px;">
             <div class="buttons"> 
                 <button class="button">Upload Image</button>
-                <form id="imageForm" method='POST' class="imageform">
+                <form id="imageForm" method="POST" enctype="multipart/form-data" class="imageform">
                     Select image to upload:
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload Image" name="submit">
                 </form>
+
                 <p id="error" class="errormessage"></p>
                 <p id="image" class="imagemessage"></p>
 

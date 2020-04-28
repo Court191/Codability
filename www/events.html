@@ -8,6 +8,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="js/logout.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
         <link rel="icon" href="img/favicon.png" type="image/png">
         <link rel="stylesheet" type="text/css" href="css/events.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -81,6 +82,17 @@
              </div>
          </div>
          <div class="events">
+
+             <form method="POST" id="eventPost"> 
+                Find Events: <br />
+                <select name="eventname">
+                </select>
+                <button><input type='submit' name='submit' value='submit' class="post"></button>
+            </form>
+             
+                <p id="error" class="errormessage"></p>
+                <p id="allcomments" class="postmessage"></p>
+             
              <input type="text" placeholder="Search..">
              <input type="text" placeholder="Filter">
              <div class="event">

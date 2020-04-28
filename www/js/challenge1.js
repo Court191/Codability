@@ -77,9 +77,12 @@ function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
-function completeprogress {
-    if ()
-}
+var totalQuizes = 5;
+
+    // run this either on page load, or dynamically when you have a new percentage to update
+    $(function(){
+        $("#NumberComplete #percent").css( {"width": (numberComplete / totalQuizes) * 100 + "%" } );
+});
 
 const questions = [
   {

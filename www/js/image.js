@@ -5,12 +5,20 @@ $(document).ready(function() {
         event.preventDefault();
         var imageValue = document.getElementById("fileToUpload").value; 
         
+        //Set Local Store for Image
+        window.localStorage.setItem("fileToUpload", fileToUpload);
+        
+        
         var imageform = new FormData(this);
             
             //Get Storage 
                 var username = window.localStorage.getItem("username");
             
                 imageform.append('username', username);
+        
+                var image = window.localStorage.getItem("fileToUpload");
+        
+                imageform.append('fileToUpload', fileToUpload);
             
             // Call AJAX    
             $.ajax({
@@ -23,8 +31,8 @@ $(document).ready(function() {
                     if(response == "Success"){
                         document.getElementById("image").innerHTML = "Image Change Successful";
                         
-                        //Local Storage 
-                                window.localStorage.setItem("fileToUpload", imageValue);
+                            console.log(response); 
+                    
                     } else {
                         console.log(response); 
                         document.getElementById("error").innerHTML = response;

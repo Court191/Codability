@@ -83,8 +83,15 @@
          </div>
          <div class="events">
               
-                    <input type="text" placeholder="Search Coding Events">
                     <input type="text" placeholder="Filter By Location">
+                    
+             <form method="POST" id="eventForm"> 
+                 Filter By Location<br/>
+                <select name="Coding Events">
+                    <option> </option>
+                </select>
+                <input type="submit" name="submit" value="Search"/>
+             </form>
         
                     <div class="eventname"><!--obj.eventname--></div>
                     <div class="date"><!--obj.date--></div>

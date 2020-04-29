@@ -9,7 +9,7 @@ session_start();
 $username = $_POST['username'];
 
 // Print out existing comment
-$query = "SELECT eventname, date, time, location, eventimage FROM events ORDER BY eventname";
+$query = "SELECT eventname, date, time, location FROM events ORDER BY eventname";
 $result = mysqli_query($db_server, $query);
 if (!$result)
     die("Database access failed: " . mysqli_error($db_server));

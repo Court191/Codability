@@ -8,7 +8,6 @@ $(document).ready(function() {
         //Set Local Store for Image
         window.localStorage.setItem("fileToUpload", fileToUpload);
         
-        
         var imageform = new FormData(this);
             
             //Get Storage 
@@ -30,6 +29,8 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success"){
                         document.getElementById("image").innerHTML = "Image Change Successful";
+                        
+                        var image = window.localStorage.getItem("fileToUpload");
                         
                             console.log(response); 
                     

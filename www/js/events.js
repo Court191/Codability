@@ -22,34 +22,3 @@ $(document).ready(function() {
             }
         }
     });
-            
-    var registerform = $("eventForm");
-    $('#eventForm').on('submit', function(event) {
-        event.preventDefault();
-        
-        var eventform = new FormData(this); 
-
-            // Call Ajax 
-            $.ajax ({
-                type: 'POST',
-                url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/events.php',
-                data: eventform,
-                processData: false, 
-                contentType: false,
-                success: function(response) {
-                if(response == "Success")
-                {
-                    document.getElementById("success").innerHTML = "Registration Successful!"; 
-                    
-                    //Local Storage 
-                    window.localStorage.setItem("username", usernameValue); 
-                    
-                } else {
-                    document.getElementById("error").innerHTML = response;
-                       } 
-                    }
-                });
-            });  
-
-    return false;
-}); 

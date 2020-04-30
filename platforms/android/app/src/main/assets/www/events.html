@@ -8,11 +8,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="js/logout.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
+        <script type="text/javascript" src="js/filterevents.js"></script>
         <link rel="icon" href="img/favicon.png" type="image/png">
         <link rel="stylesheet" type="text/css" href="css/events.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6936dab910.js" crossorigin="anonymous"></script>
         <title>Codability</title>
     </head>
 <!-- Navigation -->
@@ -33,6 +35,7 @@
             <span class="material-icons">calendar_today</span>Events
         </a>
     </nav>
+    
 <!-- Settings -->
     <nav id="mySidenav" class="sidenav">
         <h1><span class="material-icons">settings</span>Settings</h1>
@@ -40,7 +43,7 @@
         <a href="" class="sidenav__link">
             <span class="material-icons">build</span>Preferences
         </a>
-        <a href="wit.html" class="sidenav__link">
+        <a href="help.html" class="sidenav__link">
             <span class="material-icons">change_history</span>Women in Tech
         </a>
         <a href="help.html" class="sidenav__link">
@@ -49,6 +52,17 @@
         <a class="sidenav__link" id="logout" click="signout">
             <span class="material-icons" id="logout" click="signout">exit_to_app</span>Logout
         </a>
+        <div id="social" class="social"> 
+            <a href="https://www.instagram.com/codability_official/" class="sidenav__link">
+                <span class="socialicons"><i class="fab fa-instagram-square fa-2x"></i></span>
+            </a>
+            <a href="https://www.facebook.com/Codabilityofficial/" class="sidenav__link">
+                <span class="socialicons"><i class="fab fa-facebook-square fa-2x"></i></span>
+            </a>
+            <a href="https://twitter.com/CodabilityO" class="sidenav__link">
+                <span class="socialicons"><i class="fab fa-twitter-square fa-2x"></i></span>
+            </a>
+        </div>
     </nav>
     <div id="note" class="notifications">
         <h1>Notifications</h1>
@@ -69,17 +83,24 @@
              </div>
          </div>
          <div class="events">
-             <input type="text" placeholder="Search..">
-             <input type="text" placeholder="Filter">
-             <div class="event">
-                <p>Event 1</p>
-             </div>
-             <div class="event">
-                <p>Event 2</p>
-             </div>
-             <div class="event">
-                <p>Event 3</p>
-             </div>
+                    
+             <form method="POST" id="eventForm"> 
+                 Filter By Location<br/>
+                <select name="locations" id="locations" onclick="getSelectValue();">
+                    <option value="Leeds">Leeds</option>
+                    <option value="Newcastle">Newcastle</option>
+                    <option value="London">London</option>
+                </select>
+                 <input type="submit" name="submit" value="Search"/>
+             </form>
+        
+                    <div class="eventname"><!--obj.eventname--></div>
+                    <div class="date"><!--obj.date--></div>
+                    <div class="time"><!--obj.time--></div>
+                    <div class="location"><!--obj.location--></div>
+
+                <p id="error" class="errormessage"></p>
+                <p id="allevents" class="postmessage"></p>
         </div>
     </body>
 </html>

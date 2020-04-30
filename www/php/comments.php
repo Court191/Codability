@@ -16,15 +16,6 @@ if (!$result)
 while ($row = mysqli_fetch_array($result)) {
     
     $comments[] = $row; 
-//CHECK THAT THE COMMENT USERID MATCHES SESSION USER ID
-if ($row['username'] == $username['username']){
-$comments .=" <a href='delete_post.php?pID=".$row['ID']."'>Delete</a>";
-}
-        if(!isset($username["liked_" . $row['ID']])){
-                $comments .= "<a href='like.php?likeid=" . $row['ID'] ."'>Like</a>";
-        }else{  
-                $comments .="Liked"; 
-        } 
 }
 
 mysqli_free_result($result);

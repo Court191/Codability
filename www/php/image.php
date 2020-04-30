@@ -7,6 +7,9 @@ $username = $_POST['username'];
 $image = $_POST['fileToUpload'];
 
 session_start(); 
+
+var_dump($_POST); 
+
 if($_POST['submit'] == "Upload Image"){
     $target_dir = "images/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);

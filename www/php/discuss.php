@@ -24,3 +24,4 @@ require_once("db_close.php");
 echo $comment;
 
 ?>
+

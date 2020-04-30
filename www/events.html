@@ -9,6 +9,7 @@
         <script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="js/logout.js"></script>
         <script type="text/javascript" src="js/events.js"></script>
+        <script type="text/javascript" src="js/filterevents.js"></script>
         <link rel="icon" href="img/favicon.png" type="image/png">
         <link rel="stylesheet" type="text/css" href="css/events.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -82,15 +83,15 @@
              </div>
          </div>
          <div class="events">
-              
-                    <input type="text" placeholder="Filter By Location">
                     
              <form method="POST" id="eventForm"> 
                  Filter By Location<br/>
-                <select name="Coding Events">
-                    <option> </option>
+                <select name="locations" id="locations" onclick="getSelectValue();">
+                    <option value="Leeds">Leeds</option>
+                    <option value="Newcastle">Newcastle</option>
+                    <option value="London">London</option>
                 </select>
-                <input type="submit" name="submit" value="Search"/>
+                 <input type="submit" name="submit" value="Search"/>
              </form>
         
                     <div class="eventname"><!--obj.eventname--></div>

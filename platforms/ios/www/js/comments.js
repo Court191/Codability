@@ -26,12 +26,3 @@ $(document).ready(function() {
     
     return false;
 }); 
-
-/*//Refresh comments
- var int=self.setInterval("showComments()",5000);
-
-    function showComments(){
-        $.post("comments.php", function ( arr ) {
-            $("#allcomments").html( arr );
-        });
-    } */

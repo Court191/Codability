@@ -102,6 +102,22 @@ a {
     left: 0;
     padding: 15px; 
 }
+.social {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: fixed; 
+    bottom: 0;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.socialicons {
+    margin: 0.7em;
+}
 /* Notifications */
 .notifications {
   height: 100vh;

@@ -2,9 +2,6 @@ $(document).ready(function() {
     
      var events = document.getElementById("allevents").value; 
     
-     //Get Storage 
-                var username = window.localStorage.getItem("username");
-    
         // Call Ajax for existing comments
         $.ajax({
         type: 'GET',

@@ -6,8 +6,6 @@ require_once("functions.php");
   
 session_start();
 
-$username = $_POST['username'];
-if()
 // Print out existing events to filter
 $query = "SELECT * FROM events WHERE location = ‘LEEDS’";
 $result = mysqli_query($db_server, $query);

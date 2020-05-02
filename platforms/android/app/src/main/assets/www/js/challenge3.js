@@ -82,9 +82,9 @@ const questions = [
   {
     question: 'What is the correct HTML for creating a hyperlink?',
     answers: [
-      { text: '<a href="http://www.Codability.com">Codability</a>', correct: true },
-      { text: '<a>http://www.Codability.com</a>', correct: false },
-      { text: '<a url="http://www.Codability.com">Codability.com</a>', correct: false }
+      { text: '<a href="http://www.code.com">code</a>', correct: true },
+      { text: '<a>http://www.code.com</a>', correct: false },
+      { text: '<a url="http://www.code.com">code.com</a>', correct: false }
     ]
   },
   {

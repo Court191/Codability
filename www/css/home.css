@@ -151,6 +151,12 @@ a {
     border: 1px;
     border-style: solid;
     border-color: #FFFFFF;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
 }
 /* Grid */
 .grid-container {

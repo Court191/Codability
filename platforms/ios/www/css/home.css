@@ -181,6 +181,12 @@ a {
   grid-column: 1 / span 2;
   grid-row: 2;
 }
+.triangles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .triangle {
     overflow: hidden; 
 	width: 0;
@@ -189,7 +195,6 @@ a {
 	border-left: 50px solid  transparent; 
 	border-bottom: 86.60254px solid #E26CBA; 
     margin: 10px;
-    margin-left: 130px;
 }
 .triangle2 {
     overflow: hidden; 
@@ -199,7 +204,6 @@ a {
 	border-left: 50px solid  transparent; 
 	border-bottom: 86.60254px solid #3F0068; 
     margin: 10px;
-    margin-left: 130px;
 }
 .triangle3 {
     overflow: hidden; 
@@ -209,7 +213,6 @@ a {
 	border-left: 50px solid  transparent; 
 	border-bottom: 86.60254px solid #9E4287; 
     margin: 10px;
-    margin-left: 130px;
 }
 .social {
     color: #FFFFFF;

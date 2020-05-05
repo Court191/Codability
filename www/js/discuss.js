@@ -7,7 +7,12 @@ $(document).ready(function() {
         
         var forum = new FormData(this); 
         
-    if (forum) {
+    if (forum) { 
+        
+        //Reload page 
+                  setTimeout(function() {
+                    location.reload();
+                }, 1000); 
         
          //Get Storage 
                 var username = window.localStorage.getItem("username");
@@ -29,7 +34,8 @@ $(document).ready(function() {
         success: function(response) {
                 if(response == "Success")  
                 {
-                  document.getElementById("comment").innerHTML = response;
+                  document.getElementById("comment").innerHTML = "Your comment has been posted!"; 
+    
                 } else { 
                     document.getElementById("error").innerHTML = response;
                 } 

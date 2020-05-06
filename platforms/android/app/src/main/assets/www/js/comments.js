@@ -19,10 +19,22 @@ $(document).ready(function() {
                 
                 output.innerHTML += '<div class="comment-container"><div class="username">'+obj.username+'</div><div class="comment">'+obj.comment+'</div><div class="date">'+obj.commDate+'</div><div class="like">'+obj.sentiment+'</div></div>';
                 
-            }
+            } 
 
         }
-    });
+    }); 
     
     return false;
 }); 
+
+    /*setTimeout(function() {
+                    location.reload();
+                }, 10000); */ 
+
+/*     setInterval(function(){
+                    $.ajax({ url: "https://ll16clc.leedsnewmedia.net/Codability/www/php/comments.php",
+                    success: function(result) {
+                    JSON.parse(result);
+                    }
+                });
+                }, 5000); */

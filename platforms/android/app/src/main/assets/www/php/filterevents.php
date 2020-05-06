@@ -3,23 +3,36 @@
 require_once('checklog.php');
 require_once("db_connect.php");
 require_once("functions.php");
-  
-session_start();
 
-// Print out existing events to filter
-$query = "SELECT * FROM events WHERE location = ‘LEEDS’";
-$result = mysqli_query($db_server, $query);
-if (!$result)
-    die("Database access failed: " . mysqli_error($db_server));
-while ($row = mysqli_fetch_array($result)) {
+//Query the database
+if($_POST['value'] == 'Leeds') {  
+    // query to get all Leeds events 
+    $query = mysql_query("SELECT * FROM events WHERE location='Leeds'");  
+} 
+elseif($_POST['value'] == 'Newcastle') {  
+    // query to get all Newcastle events 
+    $query = mysql_query("SELECT * FROM events WHERE location='Newcastle'");  
+}
+elseif($_POST['value'] == 'London') {  
+    // query to get all London events 
+    $query = mysql_query("SELECT * FROM events WHERE location='London'");  
+}
+else {  
+    // query to get all events  
+    $query = mysql_query("SELECT eventname, date, time, location FROM events ORDER BY eventname");  
+} 
+//fetch the result
+while($row = mysqli_fetch_array($query)){
     
-    $events[] = $row; 
+    $filter[] = $row; 
 }
 
-mysqli_free_result($result);
+mysqli_free_result($query);
 
 require_once("db_close.php");
 
-echo json_encode($events);
+//echo $query;
+
+//echo json_encode($filter);
 
 ?>

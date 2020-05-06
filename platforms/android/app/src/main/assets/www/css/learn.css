@@ -139,6 +139,12 @@ a {
     border: 1px;
     border-style: solid;
     border-color: #FFFFFF;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
 }
 /* Resources */
 .resources {
@@ -193,4 +199,7 @@ p {
     color: #FFFFFF;
     text-align: left;
     font-size: 16px;
+}
+.linkresource {
+    color: #E26CBA; 
 }

@@ -23,8 +23,11 @@ $(document).ready(function() {
                 var obj = arr[i]; 
                     
                 var locations = document.getElementById("locations").value;
-                    if(locations.value =='Leeds')
-                        locations.remove; 
+                
+                    /*if(locations.value =='Leeds') {
+                        locations.value =='Newcasle'.hide; 
+                        locations.value =='London'.hide;
+                } */ 
                 
                 var output = document.getElementById("filterevents");  
                 

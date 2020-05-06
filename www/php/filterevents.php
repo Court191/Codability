@@ -16,10 +16,6 @@ elseif($_POST['locations'] == 'Newcastle') {
 elseif($_POST['locations'] == 'London') {  
     // query to get all London events 
     $query = "SELECT * FROM events WHERE location='London'";  
-}
-else {  
-    // query to get all events  
-    $query = "SELECT eventname, date, time, location FROM events ORDER BY eventname";  
 } 
 $result = mysqli_query($db_server, $query);
 //fetch the result

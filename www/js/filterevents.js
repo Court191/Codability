@@ -18,16 +18,14 @@ $(document).ready(function() {
         success: function(result) {
             console.log(result);
                 var arr = JSON.parse(result);
+             
+               document.getElementById("allevents").innerHTML = ""; 
             
-                for(var i = 0; i < arr.length; i++) {
+               document.getElementById("filterevents").innerHTML = ""; 
+               for(var i = 0; i < arr.length; i++) {
                 var obj = arr[i]; 
                     
-                var locations = document.getElementById("locations").value;
-                
-                    /*if(locations.value =='Leeds') {
-                        locations.value =='Newcasle'.hide; 
-                        locations.value =='London'.hide;
-                } */ 
+                var locations = document.getElementById("locations").value; 
                 
                 var output = document.getElementById("filterevents");  
                 

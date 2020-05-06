@@ -8,7 +8,7 @@ $(document).ready(function() {
                 
     if (events) {
         
-    // Call Ajax for new comment
+    // Call Ajax for filter events
     $.ajax({
         type: 'POST',
         url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/filterevents.php',
@@ -16,7 +16,6 @@ $(document).ready(function() {
         processData: false, 
         contentType: false,
         success: function(result) {
-            console.log(result);
                 var arr = JSON.parse(result);
              
                document.getElementById("allevents").innerHTML = ""; 

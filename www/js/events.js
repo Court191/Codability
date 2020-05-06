@@ -2,7 +2,7 @@ $(document).ready(function() {
     
      var events = document.getElementById("allevents").value; 
     
-        // Call Ajax for existing comments
+        // Call Ajax for existing events
         $.ajax({
         type: 'GET',
         url: 'https://ll16clc.leedsnewmedia.net/Codability/www/php/events.php',

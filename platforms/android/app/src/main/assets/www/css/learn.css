@@ -161,7 +161,7 @@ a {
 p {
     text-align: right;
 }
-/* Events */
+/* Learn */
 .resources {
     color: #FFFFFF;
     overflow: hidden; 
@@ -189,17 +189,18 @@ p {
     margin: 20px;
 }
 
-#resources>.comment-container .title{
+.comment-container .title{
     text-align: left;
     font-weight: bold;
     color: #3F0068;
-    font-size: 18px;
+    font-size: 22px;
 }
-#resources>.comment-container .description{
+.comment-container .description{
     color: #FFFFFF;
     text-align: left;
     font-size: 16px;
 }
-.linkresource {
-    color: #E26CBA; 
+.comment-container .resourcetype{
+    color: #9E4287;
+    font-size: 16px;
 }

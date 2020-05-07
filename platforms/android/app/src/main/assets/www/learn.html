@@ -9,6 +9,7 @@
         <script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="js/logout.js"></script>
         <script type="text/javascript" src="js/learn.js"></script>
+        <script type="text/javascript" src="js/filterlearn.js"></script>
         <link rel="icon" href="img/favicon.png" type="image/png">
         <link rel="stylesheet" type="text/css" href="css/learn.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -96,12 +97,25 @@
              </div>
          </div>
          <div class="resources">
-                <div class="comment-container">
+             
+            <form method="POST" id="learnForm"> 
+                 <h2>Filter By Location</h2>
+                <select name="resources" id="resources" value="resources">
+                     <option selected disabled>Select Resource</option>
+                    <option value="Articles">Articles</option>
+                    <option value="Tips">Tips</option>
+                </select>
+                 <input type="submit" name="submit" value="Search"/>
+             </form>
+        
                     <div class="tite"><!--obj.title--></div>
                     <div class="description"><!--obj.description--></div>
+                    <div class="resourcetype"><!--obj.resourcetype--></div>
+                    <div class="URL"><!--obj.URL--></div>
                     
-                </div> 
-                <p id="resources" class="postmessage"></p>
+                 <p id="error" class="errormessage"></p>
+                <p id="resource" class="postmessage"></p>
+                <p id="filterlearn" class="postmessage"></p>
          </div>
     </body>
 </html>

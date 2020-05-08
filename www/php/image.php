@@ -61,12 +61,14 @@ if($_POST['submit'] == "Upload Image"){
     }
 }
 
-$currentimagename = "profilepic.png";
+$currentimagename = "https://ll16clc.leedsnewmedia.net/Codability/www/img/profilepic.png";
 $query="SELECT imagename FROM users WHERE username='$username'"; 
 $result = mysqli_query($db_server, $query) or die("image load failed. ". mysqli_error($db_server)); 
 if($row = mysqli_fetch_array($result)){
     if($row['imagename']<>""){
         $currentimagename = $row['imagename'];
+        
+        $message = "Success";
     }   
 }
 mysqli_free_result($result);

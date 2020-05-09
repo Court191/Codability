@@ -7,10 +7,6 @@ $(document).ready(function() {
         
         //Set Local Store for Image
         window.localStorage.setItem("fileToUpload", fileToUpload);
-        
-        //var imageform = new FormData(this);
-        
-        var imageform = new FormData($('#imageForm')[0]);
             
             //Get Storage 
                 var username = window.localStorage.getItem("username");
@@ -43,8 +39,5 @@ $(document).ready(function() {
                     }
                 }
             });  
-        $("#fileToUpload").on("change", function() {
-        $("imageForm").submit();
     }); 
-  }); 
 });	        

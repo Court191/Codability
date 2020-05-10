@@ -214,3 +214,7 @@ button {
     text-align: left;
     color: #82C5F4;
 }
+.material-icons.heart {
+    color: #E26CBA; 
+    margin: 0;
+}

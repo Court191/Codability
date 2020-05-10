@@ -17,7 +17,7 @@ $(document).ready(function() {
                 
                 var output = document.getElementById("allcomments");  
                 
-                output.innerHTML += '<div class="comment-container"><div class="username">'+obj.username+'</div><div class="comment">'+obj.comment+'</div><div class="date">'+obj.commDate+'</div><div class="like">'+obj.sentiment+'</div></div>';
+                output.innerHTML += '<div class="comment-container"><div class="username">'+obj.username+'</div><div class="comment">'+obj.comment+'</div><div class="date">'+obj.commDate+'</div><div class="like"><span class="material-icons heart">favorite_border</span>'+obj.sentiment+'</div></div>';
                 
             } 
 
@@ -26,15 +26,3 @@ $(document).ready(function() {
     
     return false;
 }); 
-
-    /*setTimeout(function() {
-                    location.reload();
-                }, 10000); */ 
-
-/*     setInterval(function(){
-                    $.ajax({ url: "https://ll16clc.leedsnewmedia.net/Codability/www/php/comments.php",
-                    success: function(result) {
-                    JSON.parse(result);
-                    }
-                });
-                }, 5000); */

@@ -8,6 +8,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="js/logout.js"></script>
+        <script type="text/javascript" src="js/profile.js"></script>
         <link rel="icon" href="img/favicon.png" type="image/png">
         <link rel="stylesheet" type="text/css" href="css/preferences.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -94,5 +95,29 @@
                 <span onclick="openNotes()" class="material-icons">notifications</span>
              </div>
          </div>
+             <div class="content">
+                 <h2 id="username" class="usernamemessage"></h2>
+                 <div class="note"> 
+                    <p>Enable Notifications</p>
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                        </label>
+                 </div>
+                 <div class="note"> 
+                 <p>Enable Location</p>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                 </div>
+                <div class="note"> 
+                 <p>Enable Reminders</p>
+                     <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                </div>
+             </div>
     </body>
 </html>

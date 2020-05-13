@@ -131,7 +131,6 @@ a {
     border: solid 4px;
     border-color: #E26CBA;
     color: #E26CBA; 
-    margin-top: 100px;
 }
 .subject2 {
     overflow: hidden;
@@ -161,14 +160,14 @@ a {
 /* Grid */
 .grid-container {
   display: grid;
-  margin-top: 30px;
+  margin-top: 10px;
   grid-gap: 10px;
   background-color: #FFFFFF;
   padding: 10px;
 }
 .grid-container3 {
   display: grid;
-  margin-top: 30px;
+  margin-top: 10px;
   grid-gap: 10px;
   background-color: #FFFFFF;
   padding: 10px;
@@ -235,4 +234,10 @@ a {
 }
 .socialicons {
     margin: 0.7em;
+}
+.infotext {
+    overflow: hidden;
+    color: #3F0068; 
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
 }

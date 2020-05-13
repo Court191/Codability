@@ -146,18 +146,6 @@ a {
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
 }
-/* Resources */
-.resources {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px; 
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 120px
-}
 p {
     text-align: right;
 }
@@ -165,7 +153,6 @@ p {
 .resources {
     color: #FFFFFF;
     overflow: hidden; 
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,6 +162,7 @@ p {
     font-size: 10px;
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 .comment-container {
     background-color: #82C5F4; 
@@ -203,4 +191,15 @@ p {
 .comment-container .resourcetype{
     color: #9E4287;
     font-size: 16px;
+}
+.infotext {
+    overflow: hidden; 
+    color: #9E4287; 
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: left; 
+}
+h2 {
+    font-size: 18px;
 }

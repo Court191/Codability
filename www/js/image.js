@@ -3,7 +3,7 @@ $(document).ready(function() {
     var imageform = $("#imageForm");
     $("#imageForm").on('submit', function(event) {
         event.preventDefault();
-        var imageValue = document.getElementById("fileToUpload").value; 
+        var fileToUpload = document.getElementById("fileToUpload").value; 
         
         //Set Local Store for Image
         window.localStorage.setItem("fileToUpload", fileToUpload);
@@ -11,11 +11,11 @@ $(document).ready(function() {
             //Get Storage 
                 var username = window.localStorage.getItem("username");
             
-                imageform.append('username', username);
+                //imageform.append('username', username);
         
                 var image = window.localStorage.getItem("fileToUpload");
         
-                imageform.append('fileToUpload', fileToUpload);
+                //imageform.append('fileToUpload', fileToUpload);
             
             // Call AJAX    
             $.ajax({
@@ -30,11 +30,8 @@ $(document).ready(function() {
                         
                         var image = window.localStorage.getItem("fileToUpload");
                         $("#targetimage").html(data);
-                        
-                            console.log(data); 
                     
                     } else {
-                        console.log(data); 
                         document.getElementById("error").innerHTML = "Error Uploading Image";
                     }
                 }
